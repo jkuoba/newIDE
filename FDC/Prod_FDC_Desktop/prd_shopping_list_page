@@ -112,7 +112,6 @@
 	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
 	<td>All ingredients have been removed from your Grocery List.</td>
 </tr>
-<!--MRB-407-->
 <tr>
 	<td>click</td>
 	<td>link=Recipe</td>
@@ -128,11 +127,10 @@
 	<td>css=h2</td>
 	<td></td>
 </tr>
-<!--ERR MRB-370 error The list should be (0) after clean up -->
 <tr>
 	<td>assertText</td>
 	<td>css=div.mrb-shopping-list-title &gt; h2</td>
-	<td>Grocery List (18)</td>
+	<td>Grocery List (0)</td>
 </tr>
 <!--Fraction unit testing -->
 <tr>

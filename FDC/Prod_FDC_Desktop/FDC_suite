@@ -9,6 +9,7 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="FDC_LogIn.html">FDC_LogIn</a></td></tr>
+<tr><td><a href="Prod_Tutorial">Prod_Tutorial</a></td></tr>
 <tr><td><a href="Prd_Folder_View_and_sort_by">Prd_Folder_View_and_sort_by</a></td></tr>
 <tr><td><a href="Prd_list_view_and_search">Prd_list_view_and_search</a></td></tr>
 <tr><td><a href="Prod_recipe_preview_page">Prod_recipe_preview_page</a></td></tr>
