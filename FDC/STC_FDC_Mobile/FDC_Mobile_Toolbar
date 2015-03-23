@@ -43,8 +43,8 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=div.mrb-no-items &gt; span</td>
-	<td>Add ingredients from your collected recipes or write in above.</td>
+	<td>css=span.message</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -169,6 +169,7 @@
 	<td>Recipe Box</td>
 	<td></td>
 </tr>
+<!--???????????????-->
 <tr>
 	<td>waitForElementPresent</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>

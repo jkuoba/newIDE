@@ -267,17 +267,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/ul/li</td>
 	<td>exact:Brine:</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[4]/a/span[2]</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/ul/li[4]/a/span[2]</td>
 	<td>1/4 cup brown sugar</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[8]</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/ul/li[8]</td>
 	<td>The Ultimate Barbecue Sauce:</td>
 </tr>
 <tr>
@@ -381,7 +381,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.soc-net.twitter</td>
-	<td>31</td>
+	<td>8</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -412,7 +412,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.mrb-folder-link</td>
-	<td>Brunch (3)</td>
+	<td>Brunch (2)</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -528,7 +528,7 @@
 <!--Note: initialize the recipe note -->
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
