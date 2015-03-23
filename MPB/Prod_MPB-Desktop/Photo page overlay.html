@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Photo page overlay</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Photo page overlay</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://photos.hgtv.com/rooms/bathroom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h1.title.search-results-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Kids Bathroom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media.toggledOn &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-106 Mouse over on icons missing tootip-->
+<!--#### Add to  My Photo testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Saved to My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a@class</td>
+	<td>box-active-state box-action-icon box-action-quick-save icon icon-heart-checked</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<!--#### Add to Collection testing -->
+<!--ERROR MPB-319 UI broken-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Save to Collection</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td>Select Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.form-group.hidden-xs &gt; label</td>
+	<td>Add Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-8.hidden-xs &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<!--####  select collection testing -->
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Test from the photo overlay </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Saved In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<!--#### -->
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Saved In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Smart Home 2013 Kids Bathroomread more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.bigbox-ad</td>
+	<td></td>
+</tr>
+<!--#### back to MPB -->
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'My Photos')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-note-display.modal-body</td>
+	<td>Test from the photo overlay</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h5.pull-left</td>
+	<td>exact:Tags:</td>
+</tr>
+<!--#### clean up testing ,depending on the new photo add to which collection, need to verify before below testing -->
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td>All My Photos (36)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Long name 1 long name 2 long name 3 long name 4 collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.box-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>Long name 1 long name 2 long name 3 long name 4 collection</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>Long name 1 long name 2 long name 3 long name 4 collection</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Long name 1 long name 2 long name 3 long name 4 collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

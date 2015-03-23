@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Photo card toolbar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Photo card toolbar</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<!--#### tooltip testing-->
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Edit Note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add To Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Share Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Remove</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-89 edit note modal - cancel- hover overlay issue -->
+<!--#### user uploaded photo, tooltip/modal title = "Edit Photo"-->
+<!--#### CQ upload photo tooltip should be "Edit Note" -->
+<!--#### Edit Photo tool tip testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-8 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=description</td>
+	<td>from edit photo toolbar click</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>from edit photo toolbar click</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li[4]/div/a/i@class</td>
+	<td>icon icon-pencil-circle box-card-note-icon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>Description : Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=note</td>
+	<td>from edit photo toolbar click</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>Edit testing - Description : Integer posuere erat&nbsp;&nbsp;a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </td>
+</tr>
+<!--#### note original - from edit photo toolbar click-->
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<!--MPB-57 ERROR Note changes does not get update without refresh  the icon  image does not get update -->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--#### now we don't have note info, the pencil  circle should be gone-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-pencil-square-o@class</td>
+	<td>icon icon-pencil-square-o</td>
+</tr>
+<!--####  Add to collection testing -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//button[@type='button']</td>
+	<td>Select Collection</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Create New Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.form-group.hidden-xs &gt; label</td>
+	<td>Add Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize.hidden-xs</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-8.hidden-xs &gt; img</td>
+	<td></td>
+</tr>
+<!--#### collection with the same photo will be in disabled mode-->
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.disabled. &gt; a &gt; span.text</td>
+	<td>Second Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<!--## ERROR Monday -->
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>Photo added to your Trial Collection collection.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Trial Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td>Close</td>
+</tr>
+<!--#### click the collection name url direct to collection page.   -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h1.box-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<!--## Delete the test photo from the collection      -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<!--#A### initialize the photo note first then do the Add note testing -->
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>Description : Integer posuere erat&nbsp;&nbsp;a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+<!--#### Integreation testing on toolbar -->
+<!--#### test toolip add/edit note-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i@class</td>
+	<td>icon icon-pencil-circle box-card-note-icon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/div[2]/i@class</td>
+	<td>icon icon-pencil-square-o</td>
+</tr>
+<!--#### Photo Library photo edit Note testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit Note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Note</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>My Note(optional)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-10 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize.hidden-xs</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection<br />This is Edit Note testing.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Note updated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>Note updated</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<!--#### starting with Add Note testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add Note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>My Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-pencil-square-o@class</td>
+	<td>icon icon-pencil-square-o</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>name=note@placeholder</td>
+	<td>Write a note about this photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=savePhoto</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add note Testing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-10 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>Note updated</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-57 toolbar doe snot get update state  need refresh -->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i@class</td>
+	<td>icon icon-pencil-circle box-card-note-icon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/i@class</td>
+	<td>icon icon-pencil-circle box-card-note-icon</td>
+</tr>
+<!--#### back to original note content -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://myphotos.dev-hgtv.com/a/" />
+<title>SE_Example</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SE_Example</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=img.user-avatar@src</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>needToSignIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>needToSignIn</td>
+	<td></td>
+</tr>
+<!--###########-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,300)</td>
+	<td></td>
+</tr>
+<!--#######-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<!--#######-->
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=span.mrb-icon.mrb-grid-view</td>
+	<td>grid_Height</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${grid_Height}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=span.mrb-icon.mrb-list-view</td>
+	<td>list_Height</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${list_Height}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var isEqual = new Boolean(); isEqual = (${grid_Height} == 22);</td>
+	<td>isEqual</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isEqual}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyExpression</td>
+	<td>${isEqual}</td>
+	<td>true</td>
+</tr>
+<!--#######-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=div.pg-inter-container &gt; a &gt; img</td>
+	<td>oo</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${oo}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${oo} != true</td>
+	<td>noInterstitialAd</td>
+</tr>
+<!--#######-->
+<tr>
+	<td>storeTextPresent</td>
+	<td>From Toolbar (1)</td>
+	<td>YN1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN0}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${YN0} == true</td>
+	<td>deletePoint</td>
+</tr>
+<!--#######-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td></td>
+</tr>
+<!--#######-->
+<tr>
+	<td>selectFrame</td>
+	<td>google_ads_iframe_109359770/food/myrecipebox_2</td>
+	<td></td>
+</tr>
+<!--#######-->
+<tr>
+	<td>store</td>
+	<td>javascript{new Date()}</td>
+	<td>LLL</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${LLL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>${LLL}</td>
+</tr>
+<!--#######-->
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--#######-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+<!--#######-->
+</tbody></table>
+</body>
+</html>

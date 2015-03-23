@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.foodnetwork.com" />
+<title>FN_SP_folder</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FN_SP_folder</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-sponsor-card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Spring Brunch</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=section.mrb-sponsored-folder-info</td>
+	<td>Spring recipes that pair beautifully with Starbucks coffee.</td>
+</tr>
+<!--SP by and logo -->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=section.mrb-sponsored-folder-logo</td>
+	<td></td>
+</tr>
+<!--Note: SP folder should  not have edit option -->
+<tr>
+	<td>selectFrame</td>
+	<td>google_ads_iframe_109359770/food/myrecipebox_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=spText</td>
+	<td>Sponsored by:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=Jasmine Rice Pilaf with Peas, Mint, and Lemon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-folder-title-display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

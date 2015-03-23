@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.qa1-foodnetwork.com" />
+<title>Sponsor Recipes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Sponsor Recipes</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/24ba1e7/2147483647/thumbnail/91x68%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Turkey-Swedish-Meatballs-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=section.mrb-sponsored-folder-info</td>
+	<td>These recipes are easy to prepare with Food Network Products available only at Kohl's.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=section.mrb-sponsored-folder-logo</td>
+	<td></td>
+</tr>
+<!--ERROR MRB-858 SP folder should  not have edit option -->
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/2b2a49d/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Game-Day-Korean-Style-Chicken-Wing-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/2b2a49d/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Game-Day-Korean-Style-Chicken-Wing-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/59b1e1b/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Turkey-Swedish-Meatballs-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/59b1e1b/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Turkey-Swedish-Meatballs-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/c83b167/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/c83b167/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-folder-title-display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//a[@onclick='s_objectID=&quot;http://www.foodnetwork.com/recipes/food-network-kitchens/turkey-swedish-meatballs.html_1&quot;;return this.s_oc?this.s_oc(e):true']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table</td>
+	<td>Save This Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/a/span</td>
+	<td>Turkey Swedish Meatballs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/a/span</td>
+	<td>Chocolate Mini-Loaves</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td>Game Day Korean-Style …</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.dfp_logo_block. &gt; span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

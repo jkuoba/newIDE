@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://myphotos.staging-hgtv.com" />
+<title>Search Page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Search Page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>bed</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h5.ts-1</td>
+	<td>Showing your photos matching bed.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.box-search-card &gt; div.box-special-card-text</td>
+	<td>Search HGTV photos for bed</td>
+</tr>
+<!--ERROR MPB-96 result page  does not carry search term to HGTV site seracch" -->
+<!--Keep command  -->
+<!--MPB-63 search info card size is smaller -->
+<!--#### Verify no search result page -->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>aaddccff</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-64  Search no result page - Msg/ Msg location, photo library content, RR Ad issues-->
+<tr>
+	<td>waitForText</td>
+	<td>css=h5.ts-1</td>
+	<td>Showing your photos matching aaddccff.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.box-search-card &gt; i.icon.icon-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.box-search-card &gt; i.icon.icon-search</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

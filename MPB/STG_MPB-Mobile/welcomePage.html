@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>welcomePage</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">welcomePage</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://myphotos.staging-hgtv.com/welcome?TYPE=33554433&amp;REALMOID=06-000e763e-aeb6-13a1-b2e9-20050a2f90bc&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-rEfRTaX2HdMDaNo1v2H1bNSpu1Beke8xoIs5qrw8IOdBCi0%2b4NoF9BHO8E3rBMzL&amp;TARGET=-SM-http%3a%2f%2fmyphotos.staging--hgtv.com%2fa%2f</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.lead</td>
+	<td>With so much inspiration in the HGTV Photo Library, you're bound to find some photos you'll want to save for later. My Photos lets you do exactly that.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sign Up</td>
+	<td>Sign Up</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/span</td>
+	<td>exact:Already have an account?</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Log In</td>
+	<td>Log In</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.box-promo-card-content.text-center</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-heart-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.ts-0</td>
+	<td>Save photos quickly by clicking the heart icon of any image.</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(200,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/div[2]/p</td>
+	<td>Create collections and save photos by clicking the folder icon.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,1300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.box-promo-card-content.text-center &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/div/p</td>
+	<td>Access your photos and collections anytime, anywhere, on any device.</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,1600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Sign Up')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/span</td>
+	<td>exact:Already have an account?</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.box-promo-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a.box-promo-link.font-weight-bold</td>
+	<td>Log In</td>
+</tr>
+<!--#### Ad module now is flash -->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

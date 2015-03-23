@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>signUp_logIn</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">signUp_logIn</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://myphotos.staging-hgtv.com/welcome?TYPE=33554433&amp;REALMOID=06-000e763e-aeb6-13a1-b2e9-20050a2f90bc&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-rEfRTaX2HdMDaNo1v2H1bNSpu1Beke8xoIs5qrw8IOdBCi0%2b4NoF9BHO8E3rBMzL&amp;TARGET=-SM-http%3a%2f%2fmyphotos.staging--hgtv.com%2fa%2f</td>
+	<td></td>
+</tr>
+<!--####  Sign up-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign Up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Membership Account Sign-up - HGTV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>sign up with an existing account</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.janrain-provider-text-color-facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=janrain-twitter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.janrain-provider-icon-24.janrain-provider-icon-google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.janrain-provider-icon-24.janrain-provider-icon-yahoo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.aimLocal &gt; p</td>
+	<td>Or sign up with your email and password</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=aim_Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.enclosePassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.aimFooter &gt; p</td>
+	<td>By &quot;Signing Up&quot;, you agree to HGTV.com's Privacy Policy and Terms of Use.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Privacy Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Terms of Use.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#bigbox &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.aimOptions &gt; span</td>
+	<td>exact:Already a member? Log In</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=SNIAim_Login</td>
+	<td></td>
+</tr>
+<!--#### bottom area sign up -->
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,1800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Sign Up')])[2]</td>
+	<td></td>
+</tr>
+<!--#### log in  ###-->
+<tr>
+	<td>waitForTextPresent</td>
+	<td>sign up with an existing account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.box-promo-link.font-weight-bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Member Sign-in and Registration - HGTV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>log in with:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.aimLocal &gt; p</td>
+	<td>Or log in with your HGTV.com account</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=exact:forgot password?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=label.stay</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=aimStayIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.aimOptions &gt; span</td>
+	<td>exact:Don't have an account? Sign Up</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=SNIAim_SignUp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#bigbox &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<!--####  bottom area sign up -->
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,1800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.box-promo-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a.box-promo-link</td>
+	<td>Log In</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.box-promo-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Member Sign-in and Registration - HGTV</td>
+	<td></td>
+</tr>
+<!--#### Actually Log In-->
+<tr>
+	<td>waitForTitle</td>
+	<td>Member Sign-in and Registration - HGTV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=aim_Email</td>
+	<td>brendan@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=aim_Password</td>
+	<td>brendanpsd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

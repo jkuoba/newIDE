@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.qa1-foodnetwork.com/" />
+<title>The Pioneer Woman</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">The Pioneer Woman</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://thepioneerwoman.com/cooking/2014/09/shells-cheese-and-bacon-and-peas/</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Shells &amp; Cheese (with Bacon &amp; Peas) was added to All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/div</td>
+	<td>Total Time: 25 minutes More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div</td>
+	<td>exact:Cook: 20 minutes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div[2]</td>
+	<td>exact:Serves: 6</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/span</td>
+	<td>Sometimes you feel like making macaroni and cheese that involves whipping up a roux, then making a white sauce, then adding c...</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li/a/span[2]</td>
+	<td>12 ounces, weight Small Or Medium Pasta Shells</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[9]/a/span[2]</td>
+	<td>8 slices Thin Bacon, Fried Crisp And Chopped</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+<!--Note: #2 recipe-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://thepioneerwoman.com/cooking/2014/06/oven-bbq-chicken/</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Oven Roasted BBQ Chicken Thighs was added to All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/div</td>
+	<td>Total Time: 1 hour 5 minutes More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div</td>
+	<td>exact:Cook: 1 hour</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div[2]</td>
+	<td>exact:Serves: 12</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/span</td>
+	<td>I can't believe Fourth of July is almost here. I have so many questions! WHO can believe a year has passed since the last ...</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li/a/span[2]</td>
+	<td>3 cups Your Favorite BBQ Sauce</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[6]/a/span[2]</td>
+	<td>Olive Oil For Brushing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

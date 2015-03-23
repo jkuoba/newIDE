@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Photo card toolbar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Photo card toolbar</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<!--#### tooltip testing-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-pencil-square-o@data-original-title</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-folder-open-o@@data-original-title</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-share-square-o@data-original-title</td>
+	<td>Share Photo</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-trash-o@data-original-title</td>
+	<td>Remove</td>
+</tr>
+<!--#### hover edit note overlay issue seems wroking now   89 -->
+<!--#### user uploaded photo, tooltip/modal title = "Edit Photo"-->
+<!--#### CQ upload photo tooltip should be "Edit Note" -->
+<!--#### Edit Photo tool tip testing -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-10 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=description</td>
+	<td>from edit photo toolbar click</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>from edit photo toolbar click</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Test for the professional photo edit note-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-share-square-o@data-original-title</td>
+	<td>Share Photo</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-folder-open-o@data-original-title</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=i.icon.icon-trash-o@data-original-title</td>
+	<td>Remove</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>My Note(optional)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Edit testing - Description : Integer posuere erat&nbsp;&nbsp;a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<!--####  Add to collection testing first card -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//button[@type='button']</td>
+	<td>Select Collection</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Create New Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.form-group.hidden-xs &gt; label</td>
+	<td>Add Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize.hidden-xs</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-8.hidden-xs &gt; img</td>
+	<td></td>
+</tr>
+<!--#### collection with the same photo will be in disabled mode-->
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[5]/a/span</td>
+	<td>Long name 1 long name 2 long name 3 long name 4 collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<!--####-->
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Added to Trial Collection.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Trial Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td>Close</td>
+</tr>
+<!--#### click the collection name url direct to collection page.   -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h1.box-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<!--## Delete the test photo from the collection      -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<!--#A### initialize the photo note first then do the Add note testing -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Blue Victorian Home Exterior with Contemporary Touches&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addSavedToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit Photo</td>
+	<td></td>
+</tr>
+<!--original -  Green bed desc -->
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Integer posuere erat&nbsp;&nbsp;a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-pencil-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>My Note(optional)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=note</td>
+	<td>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-10 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize.hidden-xs</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Add to existing Collection- Trial Collection<br />This is Edit Note testing.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td></td>
+</tr>
+<!--#### starting with Add Note testing -->
+<!--### toolbar  add to collection testing -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>add photo to Trial Collection testing </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//button[@type='button']</td>
+	<td>JK Testing Collection</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/a</td>
+	<td></td>
+</tr>
+<!--verify content form the collection -->
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Added to JK Testing Collection.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'JK Testing Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>JK Testing Collection</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<!--test removal-->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.font-weight-light</td>
+	<td>Photo removed...</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.font-weight-bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.font-weight-bold</td>
+	<td>Undo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=View All My Collections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>My Uploads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/a/h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/p</td>
+	<td>1 Photo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All My Photos</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

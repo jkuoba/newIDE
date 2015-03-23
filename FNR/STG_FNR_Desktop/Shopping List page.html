@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Shopping List page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Shopping List page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Empty SL Testing -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Recipes in this list</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-title</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-name</td>
+	<td>Recipe by Tyler Florence</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-icon-button.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Recipe ingredients have been removed from your Shopping List.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-icon-button.ss-delete</td>
+	<td></td>
+</tr>
+<!--MRB-407-->
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-title-area</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-no-items.mrb-style&nbsp;&nbsp;&gt; span</td>
+	<td>Nothing here yet. Add from your collected recipes or write in above.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h2</td>
+	<td></td>
+</tr>
+<!--ERR MRB-370 error The list should be (0) after clean up -->
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Shopping List (28)</td>
+</tr>
+<!--Fraction unit testing -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Your recipe has been added to your Shopping List</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-show-more-or-less.mrb-style&nbsp;&nbsp;&gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Recipe ingredients have been removed from your Shopping List.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-no-items.mrb-style&nbsp;&nbsp;&gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-no-items.mrb-style&nbsp;&nbsp;&gt; span</td>
+	<td>Nothing here yet. Add from your collected recipes or write in above.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-icon.mrb-add-items-empty-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]</td>
+	<td>1 Teaspoon pure vanilla extract</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]</td>
+	<td>1/2 Cup sugar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shoppingListItemInput</td>
+	<td>1/2 Cup sugar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addIngredient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]</td>
+	<td>1 Cup sugar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shoppingListItemInput</td>
+	<td>1/2 Teaspoon pure vanilla extrac</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addIngredient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>1/2 Teaspoon pure vanilla extrac has been added to your Shopping List.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Less</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-show-more-or-less.mrb-style&nbsp;&nbsp;&gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]</td>
+	<td>1 Teaspoon pure vanilla extract</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Manage List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<!--test recipe and category-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[5]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Manage List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-shopping-list-recipes-module.mrb-style &gt; div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-shopping-list-recipes-module.mrb-style &gt; div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-share-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-hidden-rr-module.mrb-module-shopping-list-share-print &gt; h1</td>
+	<td>Share &amp; Print</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=mrb-print-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=mrb-share-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td>Done</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=mrb-share-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-hidden-rr-module.mrb-module-shopping-list-share-print &gt; h1</td>
+	<td>Share &amp; Print</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=email-recipient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.email-functionality</td>
+	<td>Ingredients will be listed out in the email you are sending. They are not interactive.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=send-shopping-list-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td>Done</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email-recipient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email-recipient</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=send-shopping-list-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-share-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Recipe ingredients have been removed from your Shopping List.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<!--Test scroll down sticky header UI-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/a[4]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,200)</td>
+	<td></td>
+</tr>
+<!--Check the sticky header -->
+</tbody></table>
+</body>
+</html>

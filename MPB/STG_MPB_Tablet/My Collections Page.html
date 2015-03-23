@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>My Collections Page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">My Collections Page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td>All My Photos (29)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View All My Collections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li/a/div/div/div[2]</td>
+	<td>Collection</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.box-collection-collage-5 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3db0035/2147483647/thumbnail/101x134/quality/75/?url=http%3A%2F%2Fimg-nonprod.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20140702%2FIaTMaFgATVuFTFas6HuA_Photo%20Dog%20room.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/686dda9/2147483647/thumbnail/66x66/quality/75/?url=http%3A%2F%2Fimg-nonprod.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20140702%2FUOdnFokJQq6phWVlk5WP_Photo%20Traditional%20White%20Kitchen%20with%20Farmhouse%20Sink.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/fe3a7e3/2147483647/thumbnail/67x66/quality/75/?url=http%3A%2F%2Fimg-nonprod.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20140702%2FnZYSYTOQB2TVogRHjO0S_Photo%20Chinese%20Ceramic%20Table%20Lamp.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3eb8da0/2147483647/thumbnail/66x66/quality/75/?url=http%3A%2F%2Fimg-nonprod.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20140702%2F3CJ9e3KSQ2FWe5P2dkMA_Photo%20my%20living%20room.jpeg')]</td>
+	<td></td>
+</tr>
+<!--#### -->
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; h4</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>29 Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li[3]/div[2]/a/h4</td>
+	<td>My Uploads</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li[3]/div[2]/p</td>
+	<td>27 Photos</td>
+</tr>
+<!--ERROR MPB-131 long collection name issue -->
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div[2]/a/h4</td>
+	<td>Long name 1 long name 2 long name 3 long name 4 collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/a/h4</td>
+	<td>Second Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[6]/div[2]/a/h4</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div[2]/p</td>
+	<td>No Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/p</td>
+	<td>No Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[6]/div[2]/p</td>
+	<td>No Photos</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-65 Missing Feature : do we have click and drag image to re-arrage feature ? -->
+</tbody></table>
+</body>
+</html>

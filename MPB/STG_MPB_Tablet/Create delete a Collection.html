@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title> Create delete a Collection</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add  Photo to a Collection</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=View All My Collections</td>
+	<td>View All My Collections</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Create New Collection</td>
+	<td>Create New Collection</td>
+</tr>
+<!--#### virtural collections testing -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=All My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=My Uploads</td>
+	<td></td>
+</tr>
+<!--####  test My Uploads link-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Uploads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>My Uploads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<!--#### test All My Photos link -->
+<tr>
+	<td>click</td>
+	<td>link=All My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-69 "or cancel"  needs to closer -->
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>New Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>test collection cancel button</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=description</td>
+	<td>test </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>New Collection</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div[2]/label</td>
+	<td>Description(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='submit'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>QA Collection 1 </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>QA Collection&nbsp;&nbsp;1 Description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td></td>
+</tr>
+<!--#### After submitted create collection, system bring user to the Collection page -->
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>QA Collection 1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.lead</td>
+	<td>QA Collection 1 Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (4)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=QA Collection 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (4)</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=QA Collection 1</td>
+	<td>QA Collection 1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QA Collection 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=p.lead</td>
+	<td>QA Collection 1 Description</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>QA Collection 1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li/a/div/div/div[2]</td>
+	<td>Photos</td>
+</tr>
+<!--#### RR AD -->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=span.mrb-advertisement-caption</td>
+	<td>Advertisement</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Collection</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//button[@type='submit'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=deleteCollectionButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=deleteCollectionButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Delete Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]//div/div/form/div</td>
+	<td>exact:Are you sure you want to delete QA Collection 1?</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'QA Collection 1')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td>Yes, Delete</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td></td>
+</tr>
+<!--#### After collection deletion, syste, directs user bacl to My Collections page -->
+<tr>
+	<td>waitForText</td>
+	<td>css=a &gt; h4</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div[2]/a/h4</td>
+	<td>My Uploads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.box-collection-collage-5 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3db0035/2147483647/thumbnail/101x134/quality/75/?url=http%3A%2F%2Fimg-nonprod.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20140702%2FIaTMaFgATVuFTFas6HuA_Photo%20Dog%20room.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<!--#### Add photo validation -->
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add Photos</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='services']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fileUploadInput</td>
+	<td>/Users/josephkuo/GitHub/SE_IDE/MPB/AeLing.jpg</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--wreeeeeeeeeeeeeee-->
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>About This Photo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.input-suggestion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.input-suggestion</td>
+	<td>Please enter a photo title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<!--#### New Collection title validation -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>New Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.input-suggestion</td>
+	<td>Please enter a collection name.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<!--#### Edit Photo Validation (toolbar)  please use  user upload -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[3]/div/a/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.modal-body</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.input-suggestion</td>
+	<td>Please enter a photo title</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Photo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.input-suggestion</td>
+	<td>Please enter a photo title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>Editing Title&nbsp;&nbsp;Testing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<!--#### Add to Collection Validation -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-folder-open-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.input-suggestion</td>
+	<td>Please select a collection or create one</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Create New Collection')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div[2]/div</td>
+	<td>Please enter a collection name (to create a collection) or select a collection above</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

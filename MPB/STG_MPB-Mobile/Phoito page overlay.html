@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://myphotos.staging-hgtv.com" />
+<title>Photo page overlay</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Photo page overlay</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://photos.staging-hgtv.com/single-image-asset-page/Contemporary-Living-Room-with-Sleek-Textured-Wall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Contemporary Living Room with Sleek Textured Wall</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]@class</td>
+	<td>box-action-icon icon icon-heart-o</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a@class</td>
+	<td>box-action-icon icon icon-folder-open-o</td>
+</tr>
+<!--ERROR MPB-106 mouse over on icons no alt text -->
+<!--#### Add to  My Photo testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Saved to My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a@class</td>
+	<td>box-active-state box-action-icon icon icon-heart-checked</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<!--#### Add to Collection testing -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add to Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//button[@type='button']</td>
+	<td>Select Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.form-group.hidden-xs &gt; label</td>
+	<td>Add Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-8.hidden-xs &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<!--####  se;ect collection testing -->
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>Test from the photo overlay </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Saved In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<!--#### -->
+<tr>
+	<td>mouseOver</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Saved In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Contemporary Living Room with Sleek Textured Wall</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.description</td>
+	<td>Textured wall panels create a cool focal wall in this contemporary New Jersey living room. The bold silver and red color scheme is punctuated by a red velvet, channel-back club chair with dramatic lines.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ol.list-inline</td>
+	<td>demo living rooms modern demo contemporary metallic gray sofa chair red velvet paneling wall eileen gray table bar cabinet club chair contemporary rug pendant light drum shades coffee table rug silver and red silver living room textured walls tripod floor lamps</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#bigbox &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<!--#### back to MPB -->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.description.show-more &gt; p</td>
+	<td>Textured wall panels create a cool focal wall in this contemporary New Jersey living room. The bold silver and red color scheme is punctuated by a red velvet, channel-back club chair with dramatic lines.</td>
+</tr>
+<!--ERROR MPB-107  the descroption cut off need more.... in the end -->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.tray-action</td>
+	<td>Contemporary Living Room with Sleek Textured Wallshow less</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h5.pull-left</td>
+	<td>exact:Tags:</td>
+</tr>
+<!--ERROR  MPB-109 ,Missomg Tags info only display 3 but we have a lots -->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Metallic</td>
+	<td></td>
+</tr>
+<!--#### clean up testing -->
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.tray-action</td>
+	<td>Contemporary Living Room with Sleek Textured Wallshow more</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--#### back to MPB -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

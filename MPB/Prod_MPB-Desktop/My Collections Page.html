@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>My Collections Page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">My Collections Page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td>All My Photos (35)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View All My Collections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li/a/div/div/div[2]</td>
+	<td>Collection</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.box-collection-collage-3 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/452394e/2147483647/thumbnail/101x66/quality/75/?url=http%3A%2F%2Fimg.sndimg.com%2Fhgtv%2Fimage%2Fupload%2Fv1%2Fhgtv_mrb%2F20141029%2FX9mcrSzSDS94bhGbV8Nw_Photo%20tradition%20dinner%20room.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; h4</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>35 Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li[3]/div[2]/a/h4</td>
+	<td>My Uploads</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section//ul/div/li[3]/div[2]/p</td>
+	<td>11 Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div[2]/a/h4</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/a/h4</td>
+	<td>JK QA testing</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[7]/div[2]/a/h4</td>
+	<td>First Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div[2]/p</td>
+	<td>No Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[6]/div[2]/p</td>
+	<td>3 Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[8]/div[2]/p</td>
+	<td>1 Photo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

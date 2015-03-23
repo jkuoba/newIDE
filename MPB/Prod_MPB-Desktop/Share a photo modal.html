@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Share a photo modal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Share a photo modal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Share Photo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-twitter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-google-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-envelope</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-12 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<!--#### Twitter ===============-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://twitter.com/home?status=http://mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/9/12/3/DP_Kathleen-Perkins-mixed-color-Mid-Century-Modern-Entryways-stairway-window-shutters_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Log in to Twitter</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.clearfix.field &gt; input[name=&quot;session[username_or_email]&quot;]</td>
+	<td>josephkuo1@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.clearfix.field &gt; input[name=&quot;session[password]&quot;]</td>
+	<td>grace2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=status</td>
+	<td>exact:http://mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/9/12/3/DP_Kathleen-Perkins-mixed-color-Mid-Century-Modern-Entryways-stairway-window-shutters_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2.action-information</td>
+	<td>exact:What's happening?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=status</td>
+	<td>exact:http://mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/9/12/3/DP_Kathleen-Perkins-mixed-color-Mid-Century-Modern-Entryways-stairway-window-shutters_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Tweet']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.js-display-url</td>
+	<td>mediadesk.sni.hgtv.com/_cqStorage/con</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=p.js-tweet-text.tweet-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[18]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.stream-end-inner.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=menu-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=menu-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.js-actionDelete &gt; button.dropdown-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='delete-tweet-dialog-dialog']/div[2]/div[4]/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='user-dropdown-toggle']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#signout-button &gt; button.dropdown-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>My Photos</td>
+	<td></td>
+</tr>
+<!--#### Pinterest ========-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.icon-pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www.pinterest.com/join/?next=/pin/create/button/%3F%26media%3Dhttp%3A//mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/11/22/1/DP_Jorge-Ulibarri-mixed-color-eclectic-outdoors_h.jpg%3F_rendition%3Dcq5dam.web.1280.1280.jpeg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=span.profileName</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${aaa}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;True&quot;</td>
+	<td>skipJump</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username_or_email</td>
+	<td>perfectqatest@yahoo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>imperfect!!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.ui-PinPreview.Module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipJump</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.downArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.boardPickerItem.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pinFormDescription</td>
+	<td>This is photo box share testing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.pinterest.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.profileName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.myBoards</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.profileName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--#### facebook-->
+<tr>
+	<td>open</td>
+	<td>https://www.facebook.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Joseph Kuo</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;false&quot;</td>
+	<td>goodStart</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=pageLoginAnchor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.uiLinkButtonInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>goodStart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Share Photo</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www.facebook.com/sharer/sharer.php?u=http://mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/11/22/1/DP_Jorge-Ulibarri-mixed-color-eclectic-outdoors_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>chi0924</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=u_0_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span._55pe</td>
+	<td>Share on your timeline</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.UIShareStage_Title &gt; span</td>
+	<td>mediadesk.sni.hgtv.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.UIShareStage_Subtitle</td>
+	<td>mediadesk.sni.hgtv.com</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.UIShareStage_Image.img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=u_0_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=userNavigationLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.uiLinkButtonInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--#### Google +-->
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://plus.google.com/share?url=http://mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/11/22/1/DP_Jorge-Ulibarri-mixed-color-eclectic-outdoors_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>perfectqa12@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>imperfect</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.ar.Mc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/11/22/1/DP_Jorge-Ulibarri-mixed-color-eclectic-outdoors_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+	<td>exact:mediadesk.sni.hgtv.com/_cqStorage/content/dam/images/hgtv/fullset/2013/11/22/1/DP_Jorge-Ulibarri-mixed-color-eclectic-outdoors_h.jpg?_rendition=cq5dam.web.1280.1280.jpeg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.gb_Z.gbii</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+<!--#### Email -->
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=div.media &gt; a</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-share-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-envelope</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Email Share</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=toEmail</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=your-name</td>
+	<td>Joseph</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=your-message</td>
+	<td>This is the best HGTV photo site</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>Email Sent to joseph@perfectsensedigital.com.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

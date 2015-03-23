@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>All My Photo Page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">All My Photo Page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td>All My Photos (29)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'All My Photos')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.media.hidden-xs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li/a/div/div/div[2]</td>
+	<td>Photos</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.media &gt; a</td>
+	<td>Photo removed...<br /> Undo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<!--#### "Add  Photos"  testing -->
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add Photo</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-center.ts-1</td>
+	<td>Browse and save from thousands of HGTV photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-header.hide-on-submit </td>
+	<td>Add Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td>Close</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+<!--#### smoothing scrolling  down -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(600,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(600,1400)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1400,2400)</td>
+	<td></td>
+</tr>
+<!--#### MPB photo page V&V -->
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='photo-gallery']/div/div/div/div/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.rsArrow.rsArrowRight&nbsp;&nbsp;&nbsp;&gt; div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.rsArrow.rsArrowRight&nbsp;&nbsp;&nbsp;&nbsp;&gt; div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='photo-gallery']/a</td>
+	<td></td>
+</tr>
+<!--ERROR MPB-83 missing Ad on photo slide page -->
+<!--ERROR MPB-81  missing description  on photo slide  page -->
+<tr>
+	<td>windowFocus</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Advertisement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.rsArrow.rsArrowRight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt; div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.rsArrow.rsArrowRight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt; div.rsArrowIcn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Bed room with classic lamp, green cushion, king size bed. A lazy charshow more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h1.tray-action &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Description : Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean </td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='photo-gallery']/a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Add delete Photo on Main</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add Photo to Main</td></tr>
+</thead><tbody>
+<!--#### Signin to facebook first -->
+<tr>
+	<td>open</td>
+	<td>http://www.facebook.com</td>
+	<td></td>
+</tr>
+<!--#### has user signed in already ?-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=span.headerTinymanName</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${aaa}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;true&quot;</td>
+	<td>skipJump</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>josephkuo1@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>gracefacebook</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=u_0_n</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dialog.filepicker.io/api/client/facebook/authStaging/open?key=Aso4Iy0zqSNiN81AmoChUz&amp;id=1389902546261&amp;referrer=recipes.staging-foodnetwork.com&amp;iframe=true&amp;version=v1&amp;s=3,1,9,12,11,15&amp;m=*/*&amp;storeLocation=s3&amp;storePath=/mrb/20140116/&amp;storeAccess=public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Isabelle_likes_taking_selfies_on_this_snow_day.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipJump</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/button</td>
+	<td>My Collections (3)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-center.ts-1</td>
+	<td>Browse and save from thousands of HGTV photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-header.hide-on-submit </td>
+	<td>Add Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td>Close</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>About This Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div[2]/label</td>
+	<td>Description(optional)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div[3]/label</td>
+	<td>My Note(optional)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-8 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.btn-default.btn-subdued</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.btn-default.btn-subdued</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.deemphasize</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>JK QA Testing Photo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=description</td>
+	<td>This is description area</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>My note section</td>
+</tr>
+<!--#### Need to test if cancel where system goes -->
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--#### bypass confirmatin modal -->
+<tr>
+	<td>waitForTitle</td>
+	<td>Photo Box</td>
+	<td></td>
+</tr>
+<!--Error MPB-37   page refresh can see the update only -->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.tray-action</td>
+	<td>JK QA Testing Photoshow more</td>
+</tr>
+<!--ERROR MPB-88 null in description -->
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td>All My Photos (30)</td>
+</tr>
+<!--#### delete and undo testing -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.font-weight-light</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.font-weight-light</td>
+	<td>Photo removed...</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.font-weight-bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.font-weight-bold</td>
+	<td>Undo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.font-weight-bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--#### remove photo testing -->
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td>All My Photos (29)</td>
+</tr>
+<!--ERROR MPB-43 manuel testing for  error state while user clicks on the "save" button-->
+<tr>
+	<td>ERROR MPB-68 Add photo modal missing link but good on collection page </td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

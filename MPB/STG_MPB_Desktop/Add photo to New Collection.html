@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Add photo to New Collection</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add photo to Collection</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.facebook.com</td>
+	<td></td>
+</tr>
+<!--#### has user signed in already ?-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Joseph Kuo</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${aaa}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;true&quot;</td>
+	<td>skipJump</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>josephkuo1@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>gracefacebook</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=u_0_n</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dialog.filepicker.io/dialog/open/?key=Aso4Iy0zqSNiN81AmoChUz&amp;id=1404930276624&amp;referrer=myphotos.staging-hgtv.com&amp;iframe=true&amp;version=v1&amp;s=3,1,9,12,11,15&amp;m=*/*&amp;storeLocation=s3&amp;storePath=/hgtv_mrb/20140710/&amp;storeAccess=public#/Facebook/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipJump</td>
+	<td></td>
+</tr>
+<!--#### jump point -->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=View All My Collections</td>
+	<td>View All My Collections</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Create New Collection</td>
+	<td>Create New Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>QA Collection for Photo Add</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=description</td>
+	<td>QA Collection for Photo Add</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>QA Collection for Photo Add</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<!--Complete of add photo  -->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dialog.filepicker.io/dialog/open/?key=Aso4Iy0zqSNiN81AmoChUz&amp;id=1404930276624&amp;referrer=myphotos.staging-hgtv.com&amp;iframe=true&amp;version=v1&amp;s=3,1,9,12,11,15&amp;m=*/*&amp;storeLocation=s3&amp;storePath=/hgtv_mrb/20140710/&amp;storeAccess=public#/Facebook/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//img[@alt='facebook_photo.jpg'])[2]</td>
+	<td></td>
+</tr>
+<!--not working -->
+<!--click link=Upload -->
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>QA Collection for Photo Add</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=p.lead</td>
+	<td>QA Collection for Photo Add</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--#### Add photo to new collection -->
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td>Upload a Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button[2]</td>
+	<td>Select From My Saved Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-center.ts-1</td>
+	<td>Browse and save from thousands of HGTV photos</td>
+</tr>
+<!--@@@@@@ test for the photo library -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-body. &gt; h5</td>
+	<td>Select as many photos as you like</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Your Saved Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Cancel</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=addSavedToCollection</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.deemphasize</td>
+	<td>or</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.icon.icon-check-circle</td>
+	<td></td>
+</tr>
+<!--Selecting photos to collection-->
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;The Green House&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img[alt=&quot;daughter room&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;daughter room&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;white cabinet room&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addSavedToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>My Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QA Collection for Photo Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>QA Collection for Photo Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='services']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fileUploadInput</td>
+	<td>C:\Documents and Settings\Administrator\Desktop\Screen Shot 2013-08-15 at 9.38.27 AM.png</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>About This Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>About This Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Cancel</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>QA photo add to collection test title </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>QA photo add to collection testing note </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>QA testing description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td>All My Photos (36)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QA Collection for Photo Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>QA Collection for Photo Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=deleteCollectionButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--MPB-339 collection deletion not working -->
+<tr>
+	<td>click</td>
+	<td>name=deleteCollectionButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Delete Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon.icon-trash-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td>All My Photos (35)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div/a/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>ok ok&nbsp;&nbsp;abdef</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=savePhoto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<!--#############################-->
+<tr>
+	<td>ERROR MPB-55 newly added photo does not shown on the collectin page </td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

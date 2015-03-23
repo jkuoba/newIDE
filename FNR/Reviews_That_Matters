@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.foodnetwork.com/" />
+<title>Reviews_That_Matters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Reviews_That_Matters</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/recipes/alton-brown/good-eats-roast-turkey-recipe.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Good Eats Roast Turkey Recipe : Alton Brown : Food Network</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.filters &gt; header.hr &gt; h5</td>
+	<td>BROWSE REVIEWS BY KEYWORD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filter_a218a4d4-312c-43b9-8930-0d564a7d66f300000137-fcc0-d29b-ab3f-fce3903c0000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filter_838900000137-fcc0-d29b-ab3f-fce3903c0000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.review</td>
+	<td>Try moving your meat thermometer. Sometimes we hit a bone or get so close to it there is a false reading. Pull the thermometer out 1 inch and see if the temp goes down. If the bird is cooking that fast pull it out at reccomended temp. Follow directions for resting. Sometimes we have to adapt and overcome. I let the meat cool and cut the whole breast off the bone and make beautiful slices. I cut the rest up best I can. Put it in an oven or microwave safe dish, and pour a little broth over the top. Cover. Warm up just before serving. Big restaurants cook their birds ahad of time. I often cook my turkey the day before so I have extra time and room in the oven. Making the gravy makes the house smell great! No one ever knows.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.content &gt; div.bottom</td>
+	<td>1 of 163 reviews for &quot;gravy&quot; <br /> Previous Next</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.count &gt; div.pull-right</td>
+	<td>Previous Next</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>40 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>This turkey recipe was the jewel in the crown of my christmas dinner...- I did a &quot;test chicken&quot; before and it was so juicy that I swear even the white meat melted in your mouth -so christmas day I served this to my family - they raved about it- I have more juice stains than gravy stains on my table cloth this year- only one tweek to the recipe though...check the time -a 12-14 lb bird took about 3.5 hrs -because of that dinner was a little late - this could also be oven temp issues too.. this is the only recipe that I will ever use</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>78 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>I have made this turkey 3 times and it has been amazing every time! Here are a few helpful hints and the answers to some questions I see here: I strongly encourage you to watch the episode. You can find it on Youtube.com by searching &quot;Romancing the Bird.&quot; Most of the questions here are answered in the episode. Next I will directly quote Alton Brown: &quot;Stuffing is Evil.&quot; Alton Brown preaches NOT stuffing your bird. It dries out the meat, increases cooking time, and drastically increases your chances for food poisoning. Hence why there's no reference to stuffing in the recipe. I found my Allspice Berries and Ginger at Whole Foods. A Tip: Crystallized Ginger is the same as Candied GInger, and you can find it cheaper outside the spice aisle if you look at a health food store. If you don't find it in the end (though I HIGHLY recommend you do because it's awesome), Alton said in the episode that you could omit those ingredients if you couldn't find them. Two other things: Make sure you LIGHTLY oil your bird with canola and do not use Butter. If you use too much or use the wrong oil, you will have a kitchen full of smoke. Also, if you're making pan gravy with the drippings, do NOT add salt until you taste it. The drippings are very flavorful and salty as it is. I found that adding unseasoned flour and low sodium stock made a great gravy. Extra salt would have been too much. This is an easy recipe for the novice as long as you follow it. Invest in the probe thermometer (I got mine for 15 bucks at Bed Bath &amp; Beyond), and TRUST THE RECIPE: It's not too much salt, it won't taste sweet, and it won't torch your turkey.... as long as you actually follow the instructions and trust in the wisdom of The Alton Brown. :-)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>120 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>I had two guidelines, low sodium and gluten free. When I compared it with another brine recipe, I concluded that I could cut the salt in half, at least and I added ~ a cup of orange juice for extra flavor. I used regular ginger, no berries. Our oven is very hot, and was off scale and smoking, so I turned it down to 350 which read 500 on the thermometer! The drippings had a nice flavor. The white meat came out so moist and tasty. We did have to put the thick legs back in the oven, because they needed more time. This was my first turkey dinner in the states, my second overall. My father, who is a good cook, said how moist the white meat was. He had seconds, not to mention the tasting that he did as he cut the turkey to put it on a serving platter. My son, who's in his mid 20's gobbled down his first plate, had seconds - with gravy on his (gluten free mac and cheese. Thank you for adding to a great day.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.count &gt; div.pull-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.count &gt; div.pull-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>163 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>It's a Keeper! Made this for Christmas 2014�Delicious, Moist, and Easy! I used about 1/2 inch of broth in the bottom of the roasting pan as others have mentioned�it does smoke roasting at 500 degrees for the first 1/2 hour, but this helped a lot! The gravy was amazing�the only thing I had to add was the flour and water. It made really yummy turkey sandwiches�and then I boiled the turkey bones and am making a turkey soup!!! Success�Thanks for sharing!</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.media &gt; p</td>
+	<td>By kenoyers</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=time</td>
+	<td>December 26, 2014</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>153 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>I think turkey is overrated and so I rarely make it. However, we had company this year so I decided to make the effort. I did a little research on brining and decided on this recipe. I had a frozen turkey already in 8% solution and didn't know how brining would/wouldn't affect it. I ended up mostly following the recipe except I used 1/8 tsp ground ginger (instead of candied), and I made the veggie broth from bouillon cubes with half the number of cubes because I was worried about the salt factor. I also added another 1/4 gallon of ice water to cover the turkey. Soaked it for 15-16 hours. Conclusion, you CAN brine a turkey already in 8% solution. Mine turned out perfectly salted and moist without being mushy. The gravy was also excellent, although it would have been too salty if I had added any salt. On Thanksgiving I wasn't sure the brining had been worth the effort, but after eating turkey sandwiches for the past 5 days, I am convinced that this recipe ROCKS!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='review-filter-8389']/div[3]/div[3]/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.media &gt; p</td>
+	<td>By Jessica.Barron Pennsylvania</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper</td>
+	<td>I was seriously nervous to try anything but cooking my turkey in a bag...My husband even disapproved of the 500 degree browning method. However, we were all pleased when I took out a perfectly browned and wonderfully moist and flavorful turkey. I have always been a fan of the dark meat....until this turkey! I always brine my pork chops. Now I will always brine my turkey! I used a gatorade cooler lined with several garbage bags (and the turkey bag I wasn't using for cooking. I didn't flip the bird because it just seemed like a hassle I didn't want to deal with. After brining, I did soak the turkey in water for fifteen minutes-the drippings were perfect (I added them to the giblet gravy I made. As a side note, I did make a vegetable stock from scratch for the brining--I didn't want chicken stock messing up the flavor of the turkey. I am glad I made the extra effort!</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.pull-left</td>
+	<td>143 of 163 reviews for &quot;gravy&quot;</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

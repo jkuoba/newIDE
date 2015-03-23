@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>User Created Collection</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">User Created Collection</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All My Photos</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>New Collection </td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>QA Collection for Photo Add @#$%^&amp;*/:&quot;{} description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (6)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td>All My Photos (35)</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.icon.icon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.media &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.container-aside</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>All My Photos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+	<td></td>
+</tr>
+<!--#### add new photo on single collection page -->
+<!--ERROR add photo button not response. need to go other collectin and back -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.box-title</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.box-cta-top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-cta-card-content &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Add Photos</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button</td>
+	<td>Upload a Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button[2]</td>
+	<td>Select From My Saved Photos</td>
+</tr>
+<tr>
+	<td>windowFocus</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Browse and save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-center.ts-1</td>
+	<td>Browse and save from thousands of HGTV photos</td>
+</tr>
+<!--#### Browser and save   should bring user to http://photos.hgtv.com still with integration issue. but link  can be tested -->
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Browse and save@href</td>
+	<td>http://photos.hgtv.com/rooms/</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td>Close</td>
+</tr>
+<!--#### Test Select from your library link -->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Your Saved Photos</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-body &gt; h5</td>
+	<td>Select as many photos as you like</td>
+</tr>
+<!--ERROR MPB-320  photo listing order -->
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Blue Victorian Home Exterior with Contemporary Touches&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addSavedToCollection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<!--Add photos -->
+<tr>
+	<td>waitForText</td>
+	<td>css=p.lead</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{} description</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Edit Collection</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=name</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=textarea[name=&quot;description&quot;]</td>
+	<td>exact:QA Collection for Photo Add @#$%^&amp;*/:&quot;{} description</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=deleteCollectionButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Cancel')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modal-heading.font-weight-xl</td>
+	<td>Delete Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td>My Collections (5)</td>
+</tr>
+</tbody></table>
+</body>
+</html>

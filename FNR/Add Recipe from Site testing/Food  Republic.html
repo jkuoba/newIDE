@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.qa1-foodnetwork.com/" />
+<title>Food  Republic</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Food  Republic</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://www.foodrepublic.com/2014/09/15/meet-fawaffle-waffled-falafel-and-hummus-recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Meet The Fawaffle: A Waffled Falafel And Hummus Recipe was added to All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<!--Error MRB-875 missing serves and section name -->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/div</td>
+	<td>Total Time: More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div</td>
+	<td>exact:Cook:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/span</td>
+	<td>exact:And now, a book that needs no introduction: Will It Waffle? Chefs, Food Republic editors, home cooks and general food enthusiasts are pretty much obsessed with the waffle. And rightly so. If you have a waffle maker, and you should, there are 53 recipes waiting to be made in that magical machine. Answer the age-old question — will it waffle? — with a resounding &quot;yes.&quot; First up, get ready to say fawaffle a bunch, because it's fun. Here, author Daniel Shumski gives some inside dope. Not only is waffled falafel a healthier alternative to the deep-fried version, it’s as delicious as it is fun to say. I often have canned chickpeas on hand for making hummus or for tossing in salads, so I would love to use those canned chickpeas to make falafel. But there’s a problem: they’re too soft and too moist for this recipe. After a long soak, dried chickpeas yield a firmer and meatier ingredient more suited for falafel. When it comes to the hummus, though, softer chickpeas are fine, so it’s easier to use canned. Removing the skins from chickpeas is the key to creating incomparably smooth hummus. Is it tedious? A bit. Is it strictly necessary? Not strictly. It will take about 3 or 4 minutes to get 95 percent of the skins off, and another few minutes to go after the last 5 percent. I usually stop after the first 3 or 4 minutes. Whether skinned or not, the chickpeas must first be processed without any additional ingredients, until they’re ground as finely as possible. Only then do you add everything else. Adding flour to the falafel makes the result a bit lighter and more cakelike, but it’s not much flour and you can leave it out if you’d like. The recipe still works beautifully. If you’re serving this with pita bread, heat that in the waffle iron, too. It will be ready in 15 seconds, and the result will be twice as waffled: warmed and waffled pita bread, filled with waffled falafel, topped with dollops of perfectly smooth hummus, and served with tomatoes, cucumbers and parsley with a drizzle of olive oil. Reprinted with permission from Will It Waffle?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li/a/span[2]</td>
+	<td>1 15-ounce can chickpeas, drained and rinsed</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[6]/a/span[2]</td>
+	<td>2 tablespoons fresh lemon juice, or more as needed</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[7]/a/span[2]</td>
+	<td>1 cup dried chickpeas, picked over and soaked in water overnight in the refrigerator</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[20]/a/span[2]</td>
+	<td>4 pockets pita bread (optional)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+<!--Note: #2 recipe-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://www.foodrepublic.com/2014/09/04/sea-lubina-veracruzana-recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>From The Sea: Lubina Veracruzana Recipe was added to All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/div</td>
+	<td>Total Time: More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div</td>
+	<td>exact:Cook:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/span</td>
+	<td>Chef and restaurateur Scott Myers’ love of Mexican food began on his first visit to the country at age seven, spending hours in the kitchen with his grandmother and aunts, helping prepare recipes that had been passed down through generations — salsas, moles, enchiladas, tamales, sopas, chiles rellenos, chilaquiles and more. His recent book, Authentic Mexican Cooking, is a tribute to the cuisine that inspires him.&nbsp;&nbsp;Veracruzana is a specific way to prepare fish with tomatoes, olives and capers, similar to what we know of the Spanish kitchen. The Veracruz city lies on the Caribbean Coast of Mexico in the eastern part of the country. Jalapeño chili peppers were also originally cultivated there. Reprinted with permission from Authentic Mexican Cooking</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li/a/span[2]</td>
+	<td>2 1/4 pounds sea bass fillet (or white fish, as desired)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[12]/a/span[2]</td>
+	<td>sea salt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

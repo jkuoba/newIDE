@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Toolbar Testing</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Toolbar Testing</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Grocery List</td>
+	<td>Grocery List</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-no-items &gt; span</td>
+	<td>Nothing here yet. Add from your collected recipes or write in above.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Category</td>
+	<td></td>
+</tr>
+<!--Note: Make sure folder "from toolbar" does not exist. it could be there due to test failed -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTextPresent</td>
+	<td>From Toolbar (0)</td>
+	<td>YN0</td>
+</tr>
+<tr>
+	<td>storeTextPresent</td>
+	<td>From Toolbar (1)</td>
+	<td>YN1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN0}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${YN0} == true</td>
+	<td>deletePoint</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${YN1} == false</td>
+	<td>skipDeletion</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>deletePoint</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-hidden-rr-module.mrb-folder-options-module &gt; h1</td>
+	<td>Folder Options</td>
+</tr>
+<!--Note: Remove test folder - From Toolbar-->
+<tr>
+	<td>clickAndWait</td>
+	<td>name=mrb-delete-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipDeletion</td>
+	<td></td>
+</tr>
+<!--Note: ToolBar - Add Ingredient -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-loading &gt; span</td>
+	<td>Adding Ingredients from The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span &gt; b</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td>More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
+	<td>18</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=bigbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=bigbox</td>
+	<td>Advertisement</td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-loading &gt; span</td>
+	<td>Adding Ingredients from Nest Cookies</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from Nest Cookies added.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
+	<td>28</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[16]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>1/2 onion, chopped</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>6 chicken legs and thighs, still connected, bone in, skin on, about 10 ounces each</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Less</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
+	<td>28</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Less</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td>More</td>
+</tr>
+<!--Note: ToolBar - Share this Recipe -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Email</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.soc-net.pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.soc-net.google</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-rbi-share-widget-header</td>
+	<td>Share</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=form.dari-frame-ignore &gt; textarea</td>
+	<td>taste really good! </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: Share icon  testing -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.soc-net.pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.soc-net.google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: Add this recipe to new folder -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.mrb-add-to-folder-create-form &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=form.mrb-add-to-folder-create-form &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-atf-title &gt; h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-atf-title &gt; h4</td>
+	<td>Recipe Box</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=form.mrb-add-to-folder-create-form &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>From Toolbar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Nest Cookies was added to From Toolbar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<!--ERROR MRB-857  add a recipe to a new folder through toolbar, the new folder does not show under the folder list until refresh -->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div[2]/div</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>From Toolbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-page']/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div..mrb-grid-or-list &gt; div &gt; a.dari-frame-ignore &gt; span</td>
+	<td>Nest Cookies</td>
+</tr>
+<!--Note: Test delet recipe from folder -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Nest Cookies has been removed from From Toolbar</td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>From Toolbar</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-grid-placeholder-content &gt; div</td>
+	<td>This folder has no recipes.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<!--Note: View this recipe -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Nest Cookies Recipe : Food Network Kitchen : Food Network</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-grid-placeholder-content &gt; div</td>
+	<td>This folder has no recipes.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-grid-placeholder-content &gt; h3</td>
+	<td>Get Started</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-grid-placeholder-content &gt; ul &gt; li</td>
+	<td>Add Food Network recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/ul/li[2]</td>
+	<td>Add a recipe from any website</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/ul/li[3]</td>
+	<td>Add your recipe</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<!--Note: Remove test folder - From Toolbar-->
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>From Toolbar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>From Toolbar has been deleted successfully</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
+</tr>
+</tbody></table>
+</body>
+</html>

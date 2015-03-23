@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="welcomePage.html">welcomePage</a></td></tr>
+<tr><td><a href="signUp_logIn.html">signUp_logIn</a></td></tr>
+<tr><td><a href="All My Photo Page.html">All My Photo Page</a></td></tr>
+<tr><td><a href="Add delete photo on Main.html">Add delete photo on Main</a></td></tr>
+<tr><td><a href="Create delete a Collection.html">Create delete a Collection</a></td></tr>
+<tr><td><a href="Add photo to New Collection.html">Add photo to New Collection</a></td></tr>
+<tr><td><a href="My Collections Page.html">My Collections Page</a></td></tr>
+<tr><td><a href="Photo card toolbar.html">Photo card toolbar</a></td></tr>
+<tr><td><a href="Add photo to Collection.html">Add photo to Collection</a></td></tr>
+<tr><td><a href="Search Page.html">Search Page</a></td></tr>
+<tr><td><a href="User Created Collection.html">User Created Collection</a></td></tr>
+<tr><td><a href="Validation.html">Validation</a></td></tr>
+<tr><td><a href="Share a photo simple.html">Share a photo simple</a></td></tr>
+<tr><td><a href="Integrated Testing.html">Integrated Testing</a></td></tr>
+</tbody></table>
+</body>
+</html>
