@@ -31,7 +31,7 @@
 	<td>css=div.mrb-nav-actions &gt; button</td>
 	<td></td>
 </tr>
-<!--ERROR MRB-1150  should not allow bad word folder creation from the drop down. -->
+<!--Note: should not allow bad word folder creation from the drop down. -->
 <tr>
 	<td>type</td>
 	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
@@ -62,7 +62,7 @@
 	<td>css=a.mrb-close-popup.box-ss-record &gt; span.box-ss-delete</td>
 	<td></td>
 </tr>
-<!--ERROR MRB-1150 should not allow badwrod on the note field on folde creation -->
+<!--Note: should not allow badwrod on the note field on folde creation -->
 <tr>
 	<td>click</td>
 	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
