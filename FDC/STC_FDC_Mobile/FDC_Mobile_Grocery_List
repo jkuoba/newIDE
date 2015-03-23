@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Shopping List page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Shopping List page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Note: Empty SL Testing -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Category</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--ERROR no processing message-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Recipes in this list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-no-items &gt; span</td>
+	<td>Add ingredients from your collected recipes or write in above.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<!--ERR MRB-370 error remove all ingredients does not get update until refresh ( it is ok ) -->
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<!--Note: Grocery List functional testing -->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Nest Cookies</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/h2/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--ERROR missing processing message -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-loading &gt; span</td>
+	<td>Adding Ingredients from Nest Cookies</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from Nest Cookies added.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li</td>
+	<td>Baking &amp; Staples</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[5]</td>
+	<td>1 Teaspoon pure vanilla extract</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[4]</td>
+	<td>1/2 Cup sugar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shoppingListItemInput</td>
+	<td>1/2 Cup sugar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addIngredient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--ERROR message missing-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>1/2 Cup sugar was added.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[4]</td>
+	<td>1 Cup sugar</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shoppingListItemInput</td>
+	<td>1/2 Teaspoon pure vanilla extrac</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addIngredient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Less</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[5]</td>
+	<td>1 Teaspoon pure vanilla extract</td>
+</tr>
+<!--Error no dynamic update -->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Grocery List (11)</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<!--Note:test recipe and category-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-private-item.mrb-grid-or-list &gt; div &gt; a.dari-frame-ignore.mrb-invoke-preview &gt; span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/h2/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--ERROR missing processing message -->
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from JK Wasabi Tuna added.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1800,1800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(0,0)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div[2]/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<!--no dynamic update get refresh to update ingredient count -->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(300,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[16]</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1500,1500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-shopping-list-recipes-module &gt; div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(2000,2000)</td>
+	<td></td>
+</tr>
+<!--No share & print in SL page mobile -->
+<!--Note: Share button testing-->
+</tbody></table>
+</body>
+</html>

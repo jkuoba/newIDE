@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.qa1-food.com" />
+<title>Bad word testing</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bad word testing</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>800</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-nav-actions &gt; button</td>
+	<td></td>
+</tr>
+<!--ERROR MRB-1150  should not allow bad word folder creation from the drop down. -->
+<tr>
+	<td>type</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>asshole</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-close-popup.box-ss-record &gt; span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--ERROR MRB-1150 should not allow badwrod on the note field on folde creation -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-nav-actions &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>This is good one</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=folderDescription</td>
+	<td>asshole</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-close-popup.box-ss-record &gt; span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Test on the existing folder, change folder name -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-write</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>Asshole folder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_title</td>
+	<td></td>
+</tr>
+<!--Test on the existing folder, change Note name -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.folderNote.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=folderNote</td>
+	<td>asshole </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_note</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

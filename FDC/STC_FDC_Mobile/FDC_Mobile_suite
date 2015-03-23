@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="FDC_Mobile_login">FDC_Mobile_login</a></td></tr>
+<tr><td><a href="FDC_Mobile_FolderView_SortBy">FDC_Mobile_FolderView_SortBy</a></td></tr>
+<tr><td><a href="FDC_Mobile_List_View_and_Search">FDC_Mobile_List_View_and_Search</a></td></tr>
+<tr><td><a href="FDC_Mobile_Grocery_List">FDC_Mobile_Grocery_List</a></td></tr>
+<tr><td><a href="FDC_Mobile_Recip_Preview">FDC_Mobile_Recip_Preview</a></td></tr>
+<tr><td><a href="FDC_Mobile_Toolbar">FDC_Mobile_Toolbar</a></td></tr>
+<tr><td><a href="FDC_Mobile_SP_recipes">FDC_Mobile_SP_recipes</a></td></tr>
+<tr><td><a href="FDC_Mobile_Private_Folder">FDC_Mobile_Private_Folder</a></td></tr>
+<tr><td><a href="FDC_Mobile_Add_A_Recipe">FDC_Mobile_Add_A_Recipe</a></td></tr>
+<tr><td><a href="FDC_Mobile_Bad_Word">FDC_Mobile_Bad_Word</a></td></tr>
+</tbody></table>
+</body>
+</html>

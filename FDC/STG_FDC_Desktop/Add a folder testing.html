@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Add a folder testing</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add a folder testing</td></tr>
+</thead><tbody>
+<!--Add a folder -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=folderTitle</td>
+	<td>AAAAA</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;createFolderDropDown&quot;] &gt; form &gt; button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=AAAAA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=AAAAA</td>
+	<td></td>
+</tr>
+<!--MRB-368 the drop down new folder missing recipe count info (0)-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AAAAA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td>AAAAA (0)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-grid-placeholder-content &gt; div</td>
+	<td>This folder has no recipes.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=mrb-delete-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>AAAAA has been deleted successfully</td>
+</tr>
+<tr>
+	<td>windowFocus</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--From Recipe card -->
+<tr>
+	<td>click</td>
+	<td>//a[@onclick='s_objectID=&quot;http://www.foodnetwork.com/recipes/jeff-mauro/chicken-mole-torta-recipe/index.html_1&quot;;return this.s_oc?this.s_oc(e):true']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[6]/table/tbody/tr/td[4]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=form.mrb-add-to-folder-create-form &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>Add a new folder 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=form.mrb-add-to-folder-enter-note.mrb-style&nbsp;&nbsp;&gt; textarea[name=&quot;recipeNote&quot;]</td>
+	<td>Add a new folder Note</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=enter-note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<!--MRB-369 should be (1) but now the folder name is missing -->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/a[3]/div/div/div</td>
+	<td>Add a new folder 1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/a[3]/div/div[2]/div</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/a[3]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=mrb-delete-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Add a new folder 1 has been deleted successfully</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

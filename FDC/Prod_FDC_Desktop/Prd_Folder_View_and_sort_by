@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Folder View page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Folder View page</td></tr>
+</thead><tbody>
+<!--Note: Folder for Recipe Add need to delete first if testing failed before -->
+<!--Note: Please delete the In shopping List folder first -->
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td>All</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
+	<td>(68)</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[2]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[2]/div/div/div</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=span.mrb-sponsored-item</td>
+	<td>Sponsored</td>
+</tr>
+<tr>
+	<td>storeTextPresent</td>
+	<td>Folder for Recipe Add</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${YN} == false</td>
+	<td>jumpPoint</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>jumpPoint</td>
+	<td></td>
+</tr>
+<!--Note: Regular testing starting point-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Grocery List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td>Load More Recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td>Grocery List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mrb-advertisement-caption</td>
+	<td>Advertisement</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-shopping-list-header &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Grocery List </td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-title.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-dropdown-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Note: Add ingredients to enable the Shopping List folder -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--Note: Sort BY - Cook Time -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<!--Note: refresh to see the shopping List folder in the folder listing-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cook Time</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>JK Wasabi Tuna</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@class=&quot;mrb-sort-by-display mrb-sort-cook-time-display&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//*[@class=&quot;mrb-sort-by-display mrb-sort-cook-time-display&quot;]</td>
+	<td>KK</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${KK}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>3 minutes</td>
+	<td></td>
+</tr>
+<!--Niote: SORT BY: A-Z -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=A-Z</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-sortby-container</td>
+	<td>Sort By: A-Z</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=A-Z</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td>Arctic Char in Salt Crust with Saffron …</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id,'i')]/div/div/div/div[2]/div/a/span</td>
+	<td>Banana Chocolate Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id,&quot;i&quot;)]/div/div/div/div[4]/div/a/span</td>
+	<td>Beet and Carrot Quick Slaw</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id,&quot;i&quot;)]/div/div/div/div[3]/div/a/span</td>
+	<td>Beef Stew</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id,&quot;i&quot;)]/div/div/div/div[5]/div/a/span</td>
+	<td>Braciole</td>
+</tr>
+<!--Note: Folder feature testing-->
+<!--Note: for default folders  like - My Notes, There shoould NOT have folder option icon -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[2]/div/div/div</td>
+	<td>My Recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[3]/div/div/div</td>
+	<td>My Notes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[3]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=form &gt; h2</td>
+	<td>My Notes</td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>name=share_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=span.mrb-icon.mrb-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Note: User created folder should see the Share and Delete folder button -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[5]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=form &gt; h2</td>
+	<td>Brunch</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=share_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--ERROR MRB-855 no content folder, shold remove share folder button -->
+<tr>
+	<td>click</td>
+	<td>name=share_folder</td>
+	<td></td>
+</tr>
+<!--ERROR MEB-1123 Share folder not working -->
+<tr>
+	<td>click</td>
+	<td>name=share_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-modal-header &gt; h2</td>
+	<td>Share By Email</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=emailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=emailBody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=emailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-error-text</td>
+	<td>Email address is required</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=emailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailBody</td>
+	<td>I love these recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Email sent to joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-title.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>All Recipes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-write</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>Mobile update</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td>Mobile update</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Mobile update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form &gt; h2</td>
+	<td>Mobile update</td>
+</tr>
+<!--Note: change the folder name back to original folder name -->
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-write. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>Mobile</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_title</td>
+	<td></td>
+</tr>
+<!--Note: Editing note card -->
+<tr>
+	<td>click</td>
+	<td>css=div.folderNote. &gt; i.box-ss-write</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=folderNote</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=folderNote</td>
+	<td>Mobile note card update</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.folderNote.</td>
+	<td>Mobile note card update</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
+	<td>Mobile I</td>
+</tr>
+<!--Note: Create New folder with existing folder name -->
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-nav-actions &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>xpath=(//input[@name='folderTitle'])[2]@placeholder</td>
+	<td>Folder Name (Required)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-add-folder-popup &gt; h2</td>
+	<td>Create New Folder</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]@placeholder</td>
+	<td>Folder Name (Required)</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>name=folderDescription@placeholder</td>
+	<td>What do you want to say about this folder? (optional)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<!--Note:validation           -->
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-error-text</td>
+	<td>No title entered</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='folderTitle'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='folderTitle'])[2]</td>
+	<td>mobile</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.mrb-error-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-error-text</td>
+	<td>You already have a folder named mobile.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-close-popup.box-ss-record &gt; span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: createa folder and add recipe to folder, make sure new folder is available without page refresh -->
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-nav-actions &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>Folder for Recipe Add</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<!--Note: Confirmation modal -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-add-folder-popup.mrb-style &gt; h2</td>
+	<td>Create New Folder</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-folder-create-success</td>
+	<td>Folder Folder for Recipe Add created successfully</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=button.mrb-inline-block</td>
+	<td>DONE</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Go to Folder</td>
+	<td>Go to Folder</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.mrb-close-popup.box-ss-record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-close-popup.box-ss-record &gt; span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td>Folder for Recipe Add</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>(0)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<!--Note:Add a recipe to newly created folder -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>css=span.message</td>
+	<td>Nest Cookies was added to Folder for Recipe Add</td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=form &gt; h2</td>
+	<td>Folder for Recipe Add</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Nest Cookies has been removed from Folder for Recipe Add</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<!--Note: Delete a folder ( just created) -->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Folder for Recipe Add has been deleted successfully</td>
+</tr>
+<!--Note: reset to original folder listing -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-write</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=title</td>
+	<td>QA Testing<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=save_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<!--Note: Test scroll down sticky header UI-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[4]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=span.mrb-icon.mrb-grid-view</td>
+	<td>grid_Height</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${grid_Height}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=span.mrb-icon.mrb-list-view</td>
+	<td>list_Height</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${list_Height}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,100)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var isEqual = new Boolean(); isEqual = (${grid_Height} == 22);</td>
+	<td>isEqual</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isEqual}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyExpression</td>
+	<td>${isEqual}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var isEqual = new Boolean(); isEqual = (${list_Height} == 22);</td>
+	<td>isEqual</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isEqual}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyExpression</td>
+	<td>${isEqual}</td>
+	<td>true</td>
+</tr>
+<!--Note: Delete folder testing-->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-nav-actions &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.mrb-form-control. &gt; input[name=&quot;folderTitle&quot;]</td>
+	<td>Delete folder testing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-create-folder-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Go to Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=delete_folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Delete folder testing has been deleted successfully</td>
+</tr>
+<tr>
+	<td>//div[starts-with(@id, 'i')]</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

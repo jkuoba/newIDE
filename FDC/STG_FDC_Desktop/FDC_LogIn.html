@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>LogIn</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LogIn</td></tr>
+</thead><tbody>
+<!--FDC Staging Desktop   recipes.qa1-food.com-->
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>​Recipe Box: Food.com's Menus and Meal Planning Tools and Tips</td>
+	<td></td>
+</tr>
+<!--check to see if user has already signed in -->
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=fd-login-btn</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;true&quot;</td>
+	<td>needToSignIn</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div &gt; ol &gt; li</td>
+	<td>1. Create an account.</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add and organize your favorite recipes.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Share your recipes with friends and family.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>skipLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>needToSignIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div &gt; ol &gt; li</td>
+	<td>1. Create an account.</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add and organize your favorite recipes.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Share your recipes with friends and family.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Log in now</td>
+	<td>Log in now</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Log in now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Log in now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-right-side &gt; div.gigya-composite-control.gigya-composite-control-textbox &gt; input[name=&quot;username&quot;]</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-right-side &gt; div.gigya-layout-row &gt; div.gigya-composite-control.gigya-composite-control-submit &gt; input.gigya-input-submit.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-title.mrb-dropdown-trigger</td>
+	<td>Recipe Box</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td>Date Added</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-dropdown-link &gt; div.dari-grid-area &gt; div.dari-grid-adj.dari-grid-adj-px</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.mrb-sortby</td>
+	<td>Sort By:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Load More Recipes</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>list view and search</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">list view and search</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-list-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td>Nest Cookies</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span[2] [@class='mrb-has-avatar']</td>
+	<td>Recipe by Tyler Florence</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<!--Note: SP module in List  view -->
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-card &gt; h3</td>
+	<td>Sponsored</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.mrb-sponsor-collage &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.mrb-sponsor-collage &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/253eeb9/2147483647/thumbnail/141x106%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-card &gt; h3</td>
+	<td>Sponsored</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1200,900)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1000,1400)</td>
+	<td></td>
+</tr>
+<!--Note: Programming Module -->
+<tr>
+	<td>assertText</td>
+	<td>link=Everyday Celebrations</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-card-group-items &gt; div..mrb-grid-or-list &gt; div &gt; a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
+	<td>Game Day Korean-Style Chicken Wings</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[8]/div/div[2]/div[3]/div/a/span</td>
+	<td>Turkey Swedish Meatballs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[8]/div/div[2]/div[4]/div/a/span</td>
+	<td>Chocolate Mini-Loaves</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td>Load More Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Load More Recipes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1000,1400)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/a/span</td>
+	<td>JK Wasabi Tuna</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[7]/div/a/span</td>
+	<td>Chicken Cacciatore</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[7]/div/a/span[2]</td>
+	<td>Recipe by Giada De Laurentiis</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(0,0)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[2]/div/div/div[2]/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: List view Component testing -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(0,0)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The Ultimate Barbecued Chicken</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/f35a7e7/2147483647/thumbnail/48x48%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Funsized%2FTyler_Florence.jpg.rend.sni2col.square.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span[2] [@class='mrb-has-avatar']</td>
+	<td>Recipe by Tyler Florence</td>
+</tr>
+<!--Note:  There is no search feature on Mobile, even the code is there  but the FE not available -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-list-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[6]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-view</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

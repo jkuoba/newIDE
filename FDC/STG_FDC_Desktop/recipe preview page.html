@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>recipe preview page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">recipe preview page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMoveAt</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The Ultimate Barbecued Chicken</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/div</td>
+	<td>Total Time: 1 hour 20 minutes More</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div</td>
+	<td>exact:Cook: 1 hour 5 minutes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div/section/div[2]</td>
+	<td>exact:Serves: 6 servings</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/h3</td>
+	<td>Chef's Note</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/button</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/h3</td>
+	<td>My Private Note</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/span</td>
+	<td>I found the folder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<!--Note: now go to recipe preview page -->
+<tr>
+	<td>click</td>
+	<td>//a[@onclick='s_objectID=&quot;http://www.foodnetwork.com/recipes/tyler-florence/the-ultimate-barbecued-chicken-recipe.html_1&quot;;return this.s_oc?this.s_oc(e):true']</td>
+	<td></td>
+</tr>
+<!--Note: Note Editing and Cancel testing -->
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>This is toolbar create new </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@name='cancel_save_note'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/span</td>
+	<td>I found the folder</td>
+</tr>
+<!--Note:  update note testing -->
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>This is toolbar create new again</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@name='save_note'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/span</td>
+	<td>I found the folder</td>
+</tr>
+<!--Note: back to original note info-->
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>I found the folder</td>
+</tr>
+<!--Note: Check the Chef note -->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/h3</td>
+	<td>Chef's Note</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/span</td>
+	<td>No Chef's note available</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.mrb-recipe-private-note.mrb-note-collapsed &gt; h3</td>
+	<td>My Private Note</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.mrb-recipe-private-note.mrb-note-collapsed &gt; button.mrb-recipe-note-show-button.mrb-note-toggle</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/button[2]</td>
+	<td></td>
+</tr>
+<!--Ingredients area testing -->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li</td>
+	<td>exact:Brine:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[4]/a/span[2]</td>
+	<td>1/4 cup brown sugar</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[8]</td>
+	<td>The Ultimate Barbecue Sauce:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[21]/a/span[2]</td>
+	<td>Freshly ground black pepper</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/h2[2]</td>
+	<td>Directions</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'View Full Recipe For Directions')])[21]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'View Full Recipe For Directions')])[21]</td>
+	<td>View Full Recipe For Directions</td>
+</tr>
+<!--Nnote: swipe testing -->
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-navigateleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-navigateleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-navigateleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-navigateleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The Ultimate Barbecued Chicken Recipe by Tyler Florence</td>
+	<td></td>
+</tr>
+<!--Note: test add ingredient to SL -->
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>2 quarts water was added.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[2]/div/ul/li[2]/a[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=li.mrb-item.mrb-show-buttons</td>
+	<td>2 Quart water</td>
+</tr>
+<!--Note: Tool bar -->
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[5]/table/tbody/tr/td[2]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.soc-net.google</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.soc-net.twitter</td>
+	<td>29</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.soc-net.pinterest</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Email</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-rbi-share-widget-close.box-ss-record &gt; span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: add to folder testing -->
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[5]/table/tbody/tr/td[3]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.mrb-folder-link</td>
+	<td>Brunch (4)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/ul/li[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[5]/table/tbody/tr/td[5]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[5]/table/tbody/tr/td[5]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Note: Test preview arrrow key hover title-->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/span</td>
+	<td>Next Recipe:<br />The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=div.pg-inter-container &gt; a &gt; img</td>
+	<td>oo</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${oo}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${oo} != true</td>
+	<td>noInterstitialAd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noInterstitialAd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMoveAt</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[2]/span</td>
+	<td>Previous Recipe:<br />Nest Cookies</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.box-ss-navigateleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td> Nest Cookies</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/a</td>
+	<td></td>
+</tr>
+<!--Note: initialize the recipe note -->
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/c717f68/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[17]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[17]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[17]</td>
+	<td>I found the folder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@name='save_note'])[17]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-shopping-list-header.mrb-style &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Grocery List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
