@@ -60,8 +60,8 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.mrb-no-items &gt; span</td>
-	<td>Add ingredients from your collected recipes or write in above.</td>
+	<td>css=span.message</td>
+	<td>All ingredients have been removed from your Grocery List.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -102,7 +102,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -121,11 +121,6 @@
 	<td></td>
 </tr>
 <!--ERROR missing processing message -->
-<tr>
-	<td>clickAndWait</td>
-	<td>link=10</td>
-	<td></td>
-</tr>
 <tr>
 	<td>refresh</td>
 	<td></td>
@@ -232,16 +227,10 @@
 	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[5]</td>
 	<td>1 Teaspoon pure vanilla extract</td>
 </tr>
-<!--Error no dynamic update -->
 <tr>
 	<td>refresh</td>
 	<td></td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=h2</td>
-	<td>Grocery List (11)</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -317,7 +306,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -328,6 +317,11 @@
 <tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(1800,1800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -368,16 +362,6 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>8000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=31</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
 	<td>7000</td>
 	<td></td>
 </tr>
@@ -397,9 +381,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[16]</td>
+	<td>verifyTextPresent</td>
 	<td>The Ultimate Barbecued Chicken</td>
+	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -428,7 +412,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.mrb-shopping-list-recipes-module &gt; div.mrb-show-more-or-less &gt; a.mrb-show-more</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/a[2]/span</td>
 	<td></td>
 </tr>
 <tr>

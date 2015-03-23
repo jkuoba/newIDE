@@ -68,11 +68,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/253eeb9/2147483647/thumbnail/141x106%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>css=div.mrb-sponsor-card &gt; h3</td>
 	<td>Sponsored</td>
@@ -211,7 +206,7 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/f35a7e7/2147483647/thumbnail/48x48%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Funsized%2FTyler_Florence.jpg.rend.sni2col.square.jpeg')]</td>
+	<td>css=div.mrb-sponsor-collage &gt; img</td>
 	<td></td>
 </tr>
 <tr>

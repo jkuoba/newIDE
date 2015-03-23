@@ -35,12 +35,12 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
-	<td>All Recipes</td>
+	<td>All</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
-	<td>(41)</td>
+	<td>(40)</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -154,11 +154,6 @@
 	<td>Load More Recipes</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=0</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>css=div.mrb-shopping-list-header &gt; a</td>
 	<td></td>
@@ -196,7 +191,7 @@
 <!--Note: Add ingredients to enable the Shopping List folder -->
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -405,7 +400,7 @@
 <!--ERROR Missing Message -->
 <tr>
 	<td>waitForText</td>
-	<td>css=div.mrb-mobile-notification-top &gt; span</td>
+	<td>id=mrb-primary-feedback</td>
 	<td>Email sent to joseph@perfectsensedigital.com</td>
 </tr>
 <tr>
@@ -765,7 +760,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.mrb-mobile-notification-top &gt; span</td>
+	<td>css=span.message</td>
 	<td>Nest Cookies was added to Folder for Recipe Add</td>
 </tr>
 <tr>
@@ -820,7 +815,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.mrb-mobile-notification-top &gt; span</td>
+	<td>css=span.message</td>
 	<td>Nest Cookies has been removed from Folder for Recipe Add</td>
 </tr>
 <tr>
@@ -876,7 +871,7 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=div.mrb-mobile-notification-top &gt; span</td>
+	<td>css=span.message</td>
 	<td>Folder for Recipe Add has been deleted successfully</td>
 </tr>
 <!--Note: reset to original folder listing -->
@@ -999,7 +994,7 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=div.mrb-mobile-notification-top &gt; span</td>
+	<td>css=span.message</td>
 	<td>Delete folder testing has been deleted successfully</td>
 </tr>
 <tr>
