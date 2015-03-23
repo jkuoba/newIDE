@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Sponsored related testing</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Sponsored related testing</td></tr>
+</thead><tbody>
+<!--SP from drop down -->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/a[2]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=strong</td>
+	<td>Sponsored Recipes Courtesy of Kohl's</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=section.mrb-sponsored-folder-info</td>
+	<td>Sponsored Recipes Courtesy of Kohl's These festive fall recipes are easy with Food Network products only at Kohl's.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td></td>
+</tr>
+<!--From Recipe grid-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-sponsor-card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=strong</td>
+	<td>Sponsored Recipes Courtesy of Kohl's</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=section.mrb-sponsored-folder-info</td>
+	<td>Sponsored Recipes Courtesy of Kohl's These festive fall recipes are easy with Food Network products only at Kohl's.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<!--From sponsored recipe section -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-card-group-title.mrb-smart-phone-folder-item &gt; h1</td>
+	<td>Everyday Celebrations</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-card-group-items &gt; div.. &gt; div &gt; a.dari-frame-ignore &gt; span</td>
+	<td>Game Day Korean-Style Chicken Wings</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.mrb-card-group-items &gt; div.. &gt; div &gt; a.dari-frame-ignore &gt; span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-sponsor-multi-logo &gt; span</td>
+	<td>Recipes sponsored by:</td>
+</tr>
+<!--ask Dev to program sponsored logo-->
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Add + tessting</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add + tessting</td></tr>
+</thead><tbody>
+<!--Note: Signin to facebook first -->
+<tr>
+	<td>open</td>
+	<td>http://www.facebook.com</td>
+	<td></td>
+</tr>
+<!--Note: has user signed in already ?-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=span.headerTinymanName</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${aaa}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;true&quot;</td>
+	<td>skipJump</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>josephkuo1@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>gracefacebook</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=u_0_n</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dialog.filepicker.io/api/client/facebook/authStaging/open?key=Aso4Iy0zqSNiN81AmoChUz&amp;id=1389902546261&amp;referrer=recipes.staging-foodnetwork.com&amp;iframe=true&amp;version=v1&amp;s=3,1,9,12,11,15&amp;m=*/*&amp;storeLocation=s3&amp;storePath=/mrb/20140116/&amp;storeAccess=public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Isabelle_likes_taking_selfies_on_this_snow_day.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipJump</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Add a personal recipe</td>
+	<td>Add a personal recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Add a food.com recipe</td>
+	<td>Add a food.com recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Import a recipe from a site</td>
+	<td>Import a recipe from a site</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=folderTitle</td>
+	<td></td>
+</tr>
+<!--Note: Add Your Recipe testing -->
+<tr>
+	<td>click</td>
+	<td>link=Add a personal recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='site-wrapper']/div/div[2]/h1</td>
+	<td>Add Your Recipe</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{new Date()}</td>
+	<td>LLL</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${LLL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>${LLL}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>This is Note section</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>Recipe Categories</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=fieldset.mrb-tag-input-fieldset &gt; p</td>
+	<td>Enter tags and separate with commas.</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=tag-suggest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tag-suggest</td>
+	<td>asia</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>name=tag-suggest</td>
+	<td>asi</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-tag-suggest-popup.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt; p</td>
+	<td>Matching Categories:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[2]/div/ul/li[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[2]/div/ul/li[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-add-recipe-time-data &gt; p</td>
+	<td>Total Time</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[3]/div[2]/p[2]</td>
+	<td>exact:Prep*</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[3]/div[2]/p[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[3]/div[2]/p[3]</td>
+	<td>exact:Cook*</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.serves-wrapper</td>
+	<td>exact:Serves*</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button.mrb-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=totalTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=totalTime</td>
+	<td>30 mins</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=prepTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=prepTime</td>
+	<td>1 hr</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=cookTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cookTime</td>
+	<td>1 hr 30 mins</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=6 to 8 servings</td>
+	<td></td>
+</tr>
+<!--Note:Photo Uploader/ Cloundinary testing-->
+<tr>
+	<td>click</td>
+	<td>link=Upload your own photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Upload your own photo</td>
+	<td>Upload your own photo</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Ingredients</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[4]/p</td>
+	<td>Enter your ingredients with amounts one at a time, hitting enter after each entry.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=ingredients</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=ingredients</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ingredients</td>
+	<td>1/2 cup Armagnac<br />1 cup water<br />1/2 cup sugar<br />1 lemon, juiced<br />1 cup dried apricots<br />1/2 cup dried dates</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.mrb-add-recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[5]/label</td>
+	<td>exact:Directions*</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/fieldset[5]/p</td>
+	<td>Enter your directions one step at a time, hitting enter after each entry.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=directions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=directions</td>
+	<td>In a saucepan, combine the Armagnac, water, sugar, and lemon juice and bring to a simmer. Add the apricots, dates, and fleur de sel and simmer just until the fruit begins to soften, about 8 to 10 minutes. Remove from the heat and allow the fruit to cool in the liquid.<br /><br />Read more at: http://www.foodnetwork.com/recipes/emeril-lagasse/apricot-and-date-frozen-mousse-with-fleur-de-sel-recipe/index.html?oc=linkback</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.mrb-add-recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>9000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=folderTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=folderTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-atf-title &gt; h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/ul/li[5]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
+	<td>(113)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
+	<td>(112)</td>
+</tr>
+<!--Note: add a recipe from a site testing -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.p1</td>
+	<td>Save links to favorite recipes from other websites to your Recipe Box.&nbsp;&nbsp;Paste any recipe URL into the box below to get started.&nbsp;&nbsp;Please note some websites do not support this feature.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.mrb-add-recipe-by-url-text-section.mrb-import-legal-disclaimer &gt; span.p1</td>
+	<td>By submitting this recipe I acknowledge the agreement with FoodNetwork.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://www.foodnetwork.com/recipes/marcela-valladolid/light-tacos-recipe.html?ic1=obnetwork</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>9000</td>
+	<td></td>
+</tr>
+<!--Note: Error same title in DB even delete from the RB but not able to add in again -->
+<tr>
+	<td>pause</td>
+	<td>9000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
+	<td>(113)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td>Light Tacos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-has-avatar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-has-avatar</td>
+	<td>Recipe by Marcela Valladolid</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.mrb-page-title &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div</td>
+	<td>(112)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<!--Note: Add a food network Recipe -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a Food Network Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Food Network Fan-Favorite Recipes : Food Network</td>
+	<td></td>
+</tr>
+<!--Signin to facebook first -->
+<tr>
+	<td>open</td>
+	<td>http://www.facebook.com</td>
+	<td></td>
+</tr>
+<!--has user signed in already ?-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=span.headerTinymanName</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${aaa}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${aaa}' == &quot;true&quot;</td>
+	<td>skipJump</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>josephkuo1@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>gracefacebook</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=u_0_n</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dialog.filepicker.io/api/client/facebook/authStaging/open?key=Aso4Iy0zqSNiN81AmoChUz&amp;id=1389902546261&amp;referrer=recipes.staging-foodnetwork.com&amp;iframe=true&amp;version=v1&amp;s=3,1,9,12,11,15&amp;m=*/*&amp;storeLocation=s3&amp;storePath=/mrb/20140116/&amp;storeAccess=public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;share_my_cake_and_step_into_year_2014.jpg&quot;]</td>
+	<td></td>
+</tr>
+<!--click    css=img[alt="Isabelle_likes_taking_selfies_on_this_snow_day.jpg"]-->
+<!--  click   link=Upload-->
+<tr>
+	<td>label</td>
+	<td>skipJump</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Add a personal recipe</td>
+	<td>Add a personal recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Add a food.com recipe</td>
+	<td>Add a food.com recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Add a recipe from a site</td>
+	<td>Add a recipe from a site</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=folderTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[name=&quot;createFolderDropDown&quot;] &gt; form &gt; button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<!--Add Your Recipe testing -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a personal recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.qa1-food.com/upload/recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='site-wrapper']/div/div[2]/h1</td>
+	<td>Add Your Recipe</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{new Date()}</td>
+	<td>LLL</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${LLL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>${LLL}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=fieldset.recipe-categories &gt; h2</td>
+	<td>Categories</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=new-category</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.input-group-addon.icon-caret-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon-chevron-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon-check-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.icon-check-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[10]/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=prepTime</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cookTime</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cookTimeUnit</td>
+	<td>label=Hours</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=serves</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=yieldAmount</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=yieldUnit</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=isPublicFalse</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>this is note field </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-ingredient</td>
+	<td>1 tps of sugar</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=new-ingredient</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-ingredient</td>
+	<td>3 eggs</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=new-ingredient</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-ingredient</td>
+	<td>1 tps of onion</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-step</td>
+	<td>add sugar</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=new-step</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-step</td>
+	<td>add eggs</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=new-step</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-step</td>
+	<td>just cook it </td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=new-ingredient</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new-step</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addurPhotoSingle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.input-group-addon.icon-caret-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.scroll-wrapper &gt; ul.list-group &gt; li.list-group-item &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ui-id-3']/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=filepicker_dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Timeline Photos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Isabelle_likes_taking_selfies_on_this_snow_day.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-widget-overlay.ui-front</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.food-label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submitRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.message</td>
+	<td>Recipe has been added successfully</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<!--add a recipe from a site testing -->
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add a recipe from a site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-title-area &gt; h2</td>
+	<td>Add a Recipe From a Site</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.mrb-add-recipe-by-url-text-section</td>
+	<td>Save links to favorite recipes from any website to your Recipe Box. Paste any recipe URL into the box below to get started.&nbsp;&nbsp;Please note some websites do not support this feature.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.mrb-add-recipe-by-url-text-section.mrb-import-legal-disclaimer &gt; span.p1</td>
+	<td>By submitting this recipe I acknowledge the agreement with Food.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=url</td>
+	<td>http://www.foodnetwork.com/recipes/aarti-sequeira/lasagna-cupcakes-recipe.html</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=addRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=saveRecipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td>All (106)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-has-avatar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td>All (105)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mrb-toolbar.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

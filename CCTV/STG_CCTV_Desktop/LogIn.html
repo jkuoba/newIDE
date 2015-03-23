@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>LogIn</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LogIn</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<!--Note: check to see if user has already signed in -->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=img.user-avatar@src</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>needToSignIn</td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>css=img.user-avatar@src</td>
+	<td>kkk</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${kkk}</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${kkk}'==&quot;http://test2-my.cookingchanneltv.com/skins/main/images/profilephotolookup/47_medthumb_hor.gif&quot;</td>
+	<td>skipLogIn</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ol &gt; li</td>
+	<td>1. Create an account.</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Add and organize your favorite recipes.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Share your recipes with friends and family.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>needToSignIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Log in now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log in now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Member Sign-in and Registration - FoodNetwork.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=aim_Email</td>
+	<td>brendan@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=aim_Password</td>
+	<td>brendanpsd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.mybox &gt; li.dropdown &gt; a.dropdown-toggle &gt; span</td>
+	<td>Recipe Box</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td>Date Added</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.mrb-sortby</td>
+	<td>Sort By:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Load More Recipes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-sort-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mrb-page-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(800,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1200,1200)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1800,1800)</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
