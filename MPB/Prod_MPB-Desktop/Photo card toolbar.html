@@ -19,7 +19,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
-	<td>My Collections (5)</td>
+	<td>My Collections (9)</td>
 </tr>
 <tr>
 	<td>mouseOver</td>
@@ -343,12 +343,12 @@
 <!--ERROR MPB-334   ========-->
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Added to Trial Collection.</td>
+	<td>Added to My Fourth Collection.</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>xpath=(//a[contains(text(),'Trial Collection')])[2]</td>
+	<td>link=My Fourth Collection</td>
 	<td></td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@
 <!--#### click the collection name url direct to collection page.   -->
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Trial Collection</td>
+	<td>link=My Fourth Collection</td>
 	<td></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>css=h1.box-title</td>
-	<td>Trial Collection</td>
+	<td>My Fourth Collection</td>
 </tr>
 <!--## Delete the test photo from the collection      -->
 <tr>
@@ -400,7 +400,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Trial Collection</td>
+	<td>link=My Fourth Collection</td>
 	<td></td>
 </tr>
 <!--#A### initialize the photo note first then do the Add note testing -->
@@ -432,7 +432,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>css=h1.box-title</td>
-	<td>Trial Collection</td>
+	<td>My Fourth Collection</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -499,11 +499,6 @@
 	<td>assertText</td>
 	<td>name=note</td>
 	<td>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.col-md-8 &gt; img</td>
-	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -671,7 +666,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Trial Collection</td>
+	<td>link=My Fourth Collection</td>
 	<td></td>
 </tr>
 <tr>
@@ -712,6 +707,11 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/p</td>
+	<td>4 Photos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[7]/div[2]/p</td>
 	<td>No Photos</td>
 </tr>
 <tr>
