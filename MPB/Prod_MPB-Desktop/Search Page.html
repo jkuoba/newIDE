@@ -19,7 +19,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
-	<td>My Collections (5)</td>
+	<td>My Collections (9)</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -62,10 +62,21 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1200)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertElementPresent</td>
 	<td>css=a.box-search-card &gt; i.icon.icon-search</td>
 	<td></td>
 </tr>
+<!--MRB-345 ERROR  result page image missing on the bottom are -->
 <!--#### Verify no search result page -->
 <tr>
 	<td>type</td>
@@ -75,6 +86,11 @@
 <tr>
 	<td>click</td>
 	<td>css=form.search-input.search-input-small &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
