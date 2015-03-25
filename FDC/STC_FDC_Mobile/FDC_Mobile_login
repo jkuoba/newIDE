@@ -11,6 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">LogIn</td></tr>
 </thead><tbody>
+<!--STG mobile -->
 <tr>
 	<td>deleteAllVisibleCookies</td>
 	<td></td>
