@@ -188,7 +188,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.name</td>
+	<td>css=h1.name</td>
 	<td>Food Network</td>
 </tr>
 <tr>
