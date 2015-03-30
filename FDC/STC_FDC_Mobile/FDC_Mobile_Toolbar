@@ -28,7 +28,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=13</td>
+	<td>link=0</td>
 	<td></td>
 </tr>
 <tr>
@@ -171,18 +171,13 @@
 </tr>
 <!--???????????????-->
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td>click</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/3203d18/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -231,14 +226,10 @@
 	<td>css=span.box-ss-delete</td>
 	<td></td>
 </tr>
+<!--ERROR  -->
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://mrb.qa.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[6]/table/tbody/tr/td/a/span[2]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/087b8e6/2147483647/thumbnail/294x222/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,13 +283,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
-	<td>28</td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
-	<td>link=28</td>
+	<td>link=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -309,11 +295,16 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=h2</td>
-	<td>Grocery List (28)</td>
+	<td>Grocery List</td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
 	<td>1/2 onion, chopped</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=0</td>
 	<td></td>
 </tr>
 <tr>
