@@ -225,8 +225,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>id=bigbox</td>
+	<td>assertText</td>
+	<td>css=span.mrb-advertisement-caption</td>
 	<td>Advertisement</td>
 </tr>
 <tr>
