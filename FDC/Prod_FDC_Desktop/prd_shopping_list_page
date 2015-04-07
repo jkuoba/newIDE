@@ -252,7 +252,7 @@
 <tr>
 	<td>type</td>
 	<td>name=shoppingListItemInput</td>
-	<td>1/2 Teaspoon pure vanilla extrac</td>
+	<td>1/2 Teaspoon pure vanilla extract</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -267,7 +267,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>1/2 Teaspoon pure vanilla extrac was added.</td>
+	<td>1/2 Teaspoon pure vanilla extract was added.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -281,13 +281,13 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[6]</td>
-	<td>1 Teaspoon pure vanilla extract</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]/ul/li[5]</td>
+	<td>1 1/2 Teaspoon pure vanilla extract</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=span.mrb-shopping-list-item-count.mrb-red-pill-container</td>
-	<td>11</td>
+	<td>10</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>

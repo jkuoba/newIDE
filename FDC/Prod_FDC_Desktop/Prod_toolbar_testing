@@ -524,6 +524,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=span.message</td>
 	<td>Nest Cookies has been removed from From Toolbar</td>
