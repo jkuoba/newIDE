@@ -218,6 +218,11 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>css=a.mrb-rbi-share-widget-close.box-ss-record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>xpath=(//button[@name='save_note'])[12]</td>
 	<td></td>
 </tr>

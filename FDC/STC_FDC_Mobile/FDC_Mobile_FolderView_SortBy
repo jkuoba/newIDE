@@ -400,7 +400,7 @@
 <!--ERROR Missing Message -->
 <tr>
 	<td>waitForText</td>
-	<td>id=mrb-primary-feedback</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>Email sent to joseph@perfectsensedigital.com</td>
 </tr>
 <tr>
@@ -761,7 +761,7 @@
 <!--ERROR Message Missing -->
 <tr>
 	<td>assertText</td>
-	<td>css=span.message</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>Nest Cookies was added to Folder for Recipe Add</td>
 </tr>
 <tr>
@@ -816,7 +816,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=span.message</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>Nest Cookies has been removed from Folder for Recipe Add</td>
 </tr>
 <tr>
@@ -872,7 +872,7 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=span.message</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>Folder for Recipe Add has been deleted successfully</td>
 </tr>
 <!--Note: reset to original folder listing -->
@@ -995,7 +995,7 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=span.message</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>Delete folder testing has been deleted successfully</td>
 </tr>
 <tr>

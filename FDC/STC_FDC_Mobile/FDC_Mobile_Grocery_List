@@ -60,7 +60,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=span.message</td>
+	<td>css=div.mrb-mobile-notification-top &gt; span</td>
 	<td>All ingredients have been removed from your Grocery List.</td>
 </tr>
 <tr>
