@@ -33,6 +33,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=h1</td>
 	<td>Recipes in this List</td>
@@ -457,7 +462,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>6000</td>
 	<td></td>
 </tr>
 <tr>
