@@ -10,13 +10,12 @@
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="FN_LogIn.html">FN_LogIn</a></td></tr>
 <tr><td><a href="FN_Prod_Tutorial module.html">FN_Prod_Tutorial module</a></td></tr>
-<tr><td><a href="FN_Folder View and Sort by.html">FN_Folder View and Sort by</a></td></tr>
-<tr><td><a href="FN_list view and search.html">FN_list view and search</a></td></tr>
+<tr><td><a href="NonSP_FN_Folder_view_sort_by">NonSP_FN_Folder_view_sort_by</a></td></tr>
+<tr><td><a href="NonSP_FN_view_and_Search">NonSP_FN_view_and_Search</a></td></tr>
 <tr><td><a href="FN_Shopping List page.html">FN_Shopping List page</a></td></tr>
-<tr><td><a href="FN_recipe preview page.html">FN_recipe preview page</a></td></tr>
-<tr><td><a href="FN_Toolbar Testing.html">FN_Toolbar Testing</a></td></tr>
-<tr><td><a href="FN_SP_folder">FN_SP_folder</a></td></tr>
-<tr><td><a href="FN_Manage Folders">FN_Manage Folders</a></td></tr>
+<tr><td><a href="NonSP_FN_recipe_preview_page">NonSP_FN_recipe_preview_page</a></td></tr>
+<tr><td><a href="NonSP_FN_toolbar_testing">NonSP_FN_toolbar_testing</a></td></tr>
+<tr><td><a href="NonSP_manage_folders">NonSP_manage_folders</a></td></tr>
 <tr><td><a href="FN_Add A Recipe.html">FN_Add A Recipe</a></td></tr>
 <tr><td><a href="FN_header_footer">FN_header_footer</a></td></tr>
 </tbody></table>

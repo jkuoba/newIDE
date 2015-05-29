@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.foodnetwork.com/" />
+<title>NonSP_FN_view_and_Search</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NonSP_FN_view_and_Search</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td>Nest Cookies</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span[2]</td>
+	<td>Recipe by Tyler Florence</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1000,900)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(1000,1400)</td>
+	<td></td>
+</tr>
+<!--Sponsor section -->
+<!--Note: Programming Module -->
+<tr>
+	<td>assertText</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td>Load More Recipes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Load More Recipes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-load-more.mrb-frame-append &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[31]/div/a/span</td>
+	<td>Rice with Broccoli and Parmesan Cheese</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[32]/div/a/span</td>
+	<td>Medley of Tiramisus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[15]/div/a/span[2]</td>
+	<td>Recipe by Paula Deen</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-add-recipe-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,100)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.mrb-folders-dropdown-button.mrb-dropdown-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[8]/div/div[5]/table/tbody/tr/td[2]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: List view Component testing -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(0,0)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The Ultimate Barbecued Chicken</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span[2]</td>
+	<td>Recipe by Tyler Florence</td>
+</tr>
+<!--Note: Search  page-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=b.box-ss-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>name=q@placeholder</td>
+	<td>Search Recipe Box</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=q</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>chicken</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=b.box-ss-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Recipe Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-search-facet</td>
+	<td>Search for chicken</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dari-frame-ignore &gt; span</td>
+	<td>Chicken Piccata</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[6]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Note: Search List view -->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-list-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>//div[starts-with(@id,'i')]/div/div/div/div[2]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span &gt; b</td>
+	<td>The Ultimate Barbecued Chicken</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/a/span</td>
+	<td>Chicken Breasts with Mushroom Sage Sauce</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td/a[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken removed.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/div[5]/table/tbody/tr/td[2]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[3]/div[2]/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.soc-net.pinterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.mrb-folder-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-grid-view</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
