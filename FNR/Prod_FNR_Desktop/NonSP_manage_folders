@@ -88,7 +88,7 @@
 </tr>
 <!--####  Manager Folder Missing All recipes and My recipes folder card -->
 <tr>
-	<td>assertText</td>
+	<td>assertNotText</td>
 	<td>id=spText</td>
 	<td>Sponsored by:</td>
 </tr>

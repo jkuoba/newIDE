@@ -17,8 +17,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/9a9230a/2147483647/thumbnail/196x148/quality/90/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -330,7 +335,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.soc-net.twitter</td>
-	<td>33</td>
+	<td>45</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -454,6 +459,7 @@
 	<td>css=i.box-ss-navigateleft</td>
 	<td></td>
 </tr>
+<!--ERROR missing preview hover recipe title -->
 <tr>
 	<td>assertText</td>
 	<td>//div[@id='mrb-grid-preview-slider']/div/div/div[2]/span</td>
@@ -477,7 +483,7 @@
 <!--Note: initialize the recipe note -->
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/9a9230a/2147483647/thumbnail/196x148/quality/90/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>

@@ -34,12 +34,12 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=h2</td>
-	<td>Spring Brunch</td>
+	<td>Everyday Celebrations</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=section.mrb-sponsored-folder-info</td>
-	<td>Spring recipes that pair beautifully with Starbucks coffee.</td>
+	<td>Everyday Celebrations These recipes are easy to prepare with Food Network Products available only at Kohl's.</td>
 </tr>
 <!--SP by and logo -->
 <tr>
@@ -85,7 +85,7 @@
 </tr>
 <tr>
 	<td>mouseOver</td>
-	<td>link=Jasmine Rice Pilaf with Peas, Mint, and Lemon</td>
+	<td>link=Turkey Swedish Meatballs</td>
 	<td></td>
 </tr>
 <tr>

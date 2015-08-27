@@ -18,7 +18,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -120,8 +120,13 @@
 </tr>
 <!--Note:  update note testing -->
 <tr>
+	<td>type</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
+	<td>this is</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -131,12 +136,12 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>This is toolbar create new again</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//button[@name='save_note'])[22]</td>
+	<td>xpath=(//button[@name='save_note'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -152,7 +157,7 @@
 <!--Note: back to original note info-->
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,12 +167,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>I found the folder</td>
 </tr>
 <!--Note: Check the Chef note -->
@@ -313,7 +318,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.soc-net.twitter</td>
-	<td>33</td>
+	<td>44</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -344,7 +349,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.mrb-folder-link</td>
-	<td>Brunch (2)</td>
+	<td>Brunch (21)</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -460,7 +465,7 @@
 <!--Note: initialize the recipe note -->
 <tr>
 	<td>click</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -470,17 +475,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>I found the folder</td>
 </tr>
 <tr>
@@ -490,7 +495,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//button[@name='save_note'])[22]</td>
+	<td>xpath=(//button[@name='save_note'])[20]</td>
 	<td></td>
 </tr>
 <tr>
