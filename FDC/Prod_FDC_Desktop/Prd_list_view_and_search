@@ -46,11 +46,6 @@
 	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/c717f68/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
-</tr>
 <!--Note: SP module in List  view -->
 <tr>
 	<td>assertTextNotPresent</td>
@@ -206,18 +201,13 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/9a9230a/2147483647/thumbnail/196x148/quality/90/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span[2]</td>
 	<td>Recipe by Tyler Florence</td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://dje7rr2pnbe7f.cloudfront.net/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
 </tr>
 <!--Note: Search  page-->
 <tr>

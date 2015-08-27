@@ -287,18 +287,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -322,9 +317,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>Ingredients from JK Wasabi Tuna added.</td>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span &gt; b</td>
+	<td>JK Testing for add new folder from the recipe entry form</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -340,6 +335,11 @@
 	<td>pause</td>
 	<td>3000</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span &gt; b</td>
+	<td>The Ultimate Barbecued Chicken</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -377,9 +377,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>Ingredients from JK Wasabi Tuna added.</td>
+	<td>assertText</td>
+	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span &gt; b</td>
+	<td>JK Testing for add new folder from the recipe entry form</td>
 </tr>
 <tr>
 	<td>pause</td>

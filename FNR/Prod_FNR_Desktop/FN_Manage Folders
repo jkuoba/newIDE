@@ -90,7 +90,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=h1</td>
-	<td>Spring Brunch</td>
+	<td>Everyday Celebrations</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -103,14 +103,9 @@
 	<td>Sponsored</td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>link=Spring Brunch Recipes</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>css=a.dari-frame-ignore.mrb-invoke-preview &gt; span</td>
-	<td>Carrot Cake Pancakes with Sweetened Yogurt</td>
+	<td>Game Day Korean-Style Chicken Wings</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -120,7 +115,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[6]/div/div[2]/div[4]/div/a/span</td>
-	<td>Grilled Leg of Lamb</td>
+	<td>Chocolate Mini-Loaves</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
