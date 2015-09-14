@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.qa1-foodnetwork.com/" />
+<title>SP recipe page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SP recipe page</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/recipes/paula-deen/beef-stroganoff-recipe.html?dfpenv=staging</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Saved Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Beef Stroganoff Recipe : Paula Deen : Food Network</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Prev Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Next Recipe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.pull-left</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.media &gt; h6</td>
+	<td>Recipe courtesy of Paula Deen</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.img_ad</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=spText</td>
+	<td>Sponsored by</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowFocus</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img[alt=&quot;Beef Stroganoff&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=dt.total</td>
+	<td>Total Time:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=dd.total</td>
+	<td>45 min</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//dd[3]</td>
+	<td>40 min</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.difficulty &gt; dl</td>
+	<td>exact:Yield: 4 servings</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//dl[2]</td>
+	<td>exact:Level: Easy</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col8.ingredients</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.col10.directions &gt; h6</td>
+	<td>Directions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.col10.directions &gt; p</td>
+	<td>Sprinkle the steak strips with House Seasoning to light cover them, and then dust with flour. In a large skillet, quickly brown them on both sides in the olive oil and butter. Remove the steak from the pan. Add the onion slices and mushrooms to the pan drippings. Saute for a few minutes, until the onion is tender. Sprinkle with 1 teaspoon flour. Put the steak back into the pan with the onion and mushrooms. Add the mushroom soup and beef broth. Cook over low heat for about 30 minutes, covered. Adjust seasoning to taste, adding salt and pepper, as needed. Stir in the sour cream the last few minutes, right before you serve. Serve over cooked noodles.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-block</td>
+	<td>1 1/2 pounds cubed round steak, cut into thin strips</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[11]/div[2]</td>
+	<td>1 cup sour cream</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.subtitle</td>
+	<td>House Seasoning:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[16]/div[2]</td>
+	<td>1/4 cup garlic powder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-block</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-add-items-large</td>
+	<td>Add Checked Items To Grocery List</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, '0')]/div/div/div/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.mrb-add-items-large</td>
+	<td>Add Checked Items To Grocery List</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=google_ads_iframe_201823409/food/recipes_9__container__</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(600,2500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,3500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-add-items-large</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row &gt; div.gigya-layout-cell.mobile-use-your-email &gt; div.gigya-composite-control.gigya-composite-control-textbox &gt; input[name=&quot;username&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row &gt; div.gigya-layout-cell.mobile-use-your-email &gt; div.gigya-composite-control.gigya-composite-control-textbox &gt; input[name=&quot;username&quot;]</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row &gt; div.gigya-layout-cell.mobile-use-your-email &gt; div.gigya-composite-control.gigya-composite-control-password &gt; input[name=&quot;password&quot;]</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#gigya-login-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row.cust-social-row &gt; div.gigya-layout-cell. &gt; div.gigya-layout-row. &gt; div.gigya-layout-cell &gt; div.gigya-composite-control.gigya-composite-control-submit &gt; input.gigya-input-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h4.box-modal-header</td>
+	<td>Success!</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.box-modal-subhead</td>
+	<td>Ingredients have been added to your Grocery List and the recipe has been saved.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=View List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.box-success-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.box-ss-delete</td>
+	<td></td>
+</tr>
+<!--Verify Native INgredient Ad slot -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.img_ad</td>
+	<td></td>
+</tr>
+<!--#ERROR MRB-1446  Ad slot need padding away from Add GL button -->
+<!--#ERROR  MRB-1447  FF borwser PDF preview -->
+</tbody></table>
+</body>
+</html>
