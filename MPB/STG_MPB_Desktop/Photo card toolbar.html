@@ -19,7 +19,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
-	<td>My Collections (5)</td>
+	<td>My Collections (9)</td>
 </tr>
 <tr>
 	<td>mouseOver</td>
@@ -326,7 +326,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[10]/a/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -339,12 +339,7 @@
 	<td>name=saveToCollection</td>
 	<td></td>
 </tr>
-<!--####-->
-<tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
+<!--ERROR MPB -357 no confirmation pop up modal-->
 <tr>
 	<td>verifyTextPresent</td>
 	<td>Added to Trial Collection.</td>
@@ -372,6 +367,11 @@
 </tr>
 <!--#### click the collection name url direct to collection page.   -->
 <tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>link=Trial Collection</td>
 	<td></td>
@@ -395,6 +395,11 @@
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[@href='http://myphotos.staging-hgtv.com/a/'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
@@ -563,22 +568,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=note</td>
-	<td>add photo to Trial Collection testing </td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>name=saveToCollection</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>//button[@type='button']</td>
 	<td></td>
 </tr>
 <tr>
@@ -587,16 +577,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//button[@type='button']</td>
-	<td>JK Testing Collection</td>
+	<td>type</td>
+	<td>name=note</td>
+	<td>add photo to jkuo QA testing </td>
+</tr>
+<!--ERROR process save process but no response , thus missing confirmation pop up-->
+<tr>
+	<td>click</td>
+	<td>name=saveToCollection</td>
+	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/a</td>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>Added to JK QA testing.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <!--verify content form the collection -->
+<!--you should be in teh JK QA collection page -->
 <tr>
 	<td>click</td>
 	<td>name=saveToCollection</td>
@@ -604,27 +611,12 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>Added to JK Testing Collection.</td>
+	<td>Added to JK QA testing</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(text(),'JK Testing Collection')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=h1.box-title</td>
-	<td>JK Testing Collection</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -706,7 +698,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[5]/div[2]/p</td>
-	<td>1 Photo</td>
+	<td>No Photos</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -718,6 +710,7 @@
 	<td>All My Photos</td>
 	<td></td>
 </tr>
+<!--okoko-->
 </tbody></table>
 </body>
 </html>
