@@ -96,7 +96,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
-	<td>My Collections (5)</td>
+	<td>My Collections (9)</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -105,7 +105,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div/button</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
 	<td></td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div/button</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
 	<td></td>
 </tr>
 <tr>
@@ -311,22 +311,17 @@
 <!--Selecting photos to collection-->
 <tr>
 	<td>click</td>
-	<td>css=img[alt=&quot;The Green House&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
 	<td>css=img[alt=&quot;daughter room&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=img[alt=&quot;daughter room&quot;]</td>
+	<td>css=img[alt=&quot;white cabinet&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=img[alt=&quot;white cabinet room&quot;]</td>
+	<td>css=img[alt=&quot;Blue Victorian Home Exterior with Contemporary Touches&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -380,19 +375,24 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=fileUploadInput</td>
+	<td>/Users/josephkuo/Desktop/PhotoUpload.png</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//ul[@id='services']/li[2]/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>name=filepicker_dialog</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>id=fileUploadInput</td>
-	<td>C:\Documents and Settings\Administrator\Desktop\Screen Shot 2013-08-15 at 9.38.27 AM.png</td>
+	<td>C:\Documents and Settings\Administrator\Desktop\PhotoUpload.png</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -445,11 +445,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>open</td>
 	<td>/</td>
 	<td></td>
@@ -462,11 +457,16 @@
 <tr>
 	<td>waitForText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
-	<td>All My Photos (36)</td>
+	<td>All My Photos (70)</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div/button</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
 	<td></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
-	<td>My Collections (5)</td>
+	<td>My Collections (9)</td>
 </tr>
 <tr>
 	<td>open</td>
@@ -563,7 +563,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
-	<td>All My Photos (35)</td>
+	<td>All My Photos (69)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -594,11 +594,6 @@
 	<td>waitForText</td>
 	<td>css=h1.box-title</td>
 	<td>All My Photos</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[starts-with(@id, 'i')]/section/ul/div/li[4]/div/a/div[4]/i</td>
-	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
