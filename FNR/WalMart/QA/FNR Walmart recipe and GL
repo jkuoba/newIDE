@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>600</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -197,11 +197,6 @@
 	<td></td>
 </tr>
 <!--QA Note: now no check mark walmart button should send all ingredients -->
-<tr>
-	<td>selectWindow</td>
-	<td>name=silverlight:mpeg4</td>
-	<td></td>
-</tr>
 <tr>
 	<td>click</td>
 	<td>css=input[type=&quot;submit&quot;]</td>

@@ -23,7 +23,7 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>/recipe/bread-pudding-with-jack-daniels-sauce-100?dfpenv=staging&amp;cs_debug=active</td>
+	<td>http://www.qa1-food.com/recipe/bread-pudding-with-jack-daniels-sauce-100?dfpenv=staging&amp;cs_debug=active</td>
 	<td> </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=div.alert.alert-success</td>
-	<td>exact:Success: POSTED 15 Ingredients</td>
+	<td>exact:Success: POSTED 12 Ingredients</td>
 </tr>
 <tr>
 	<td>close</td>
@@ -277,11 +277,6 @@
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>name=silverlight:mpeg4</td>
 	<td></td>
 </tr>
 <tr>

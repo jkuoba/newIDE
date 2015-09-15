@@ -11,7 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">a1</td></tr>
 </thead><tbody>
-<!--QA Note: test for SP and Ad slot , print preview and share feature -->
+<!--QA Note: test for SP and Ad slot , print preview and share feature .-->
 <!--QA Note: print preview and mail sholuld be manuel review testing. ensure SP logo present -->
 <tr>
 	<td>setSpeed</td>
