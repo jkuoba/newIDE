@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Walmart Recipe and GL</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Walmart Recipe and GL</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/recipe/bread-pudding-with-jack-daniels-sauce-100?dfpenv=staging&amp;cs_debug=active</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.img_ad</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=spText</td>
+	<td>Sponsored by</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1000)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//article[@id='100']/section[2]/div/div[4]/h3</td>
+	<td>Ingredients Nutrition</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//article[@id='100']/section[2]/div/div[5]/h3</td>
+	<td>Directions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.servings</td>
+	<td>Servings 8</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.units</td>
+	<td>Units US</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.related-video-howto &gt; span.btn-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.servings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//article[@id='100']/section[2]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//article[@id='100']/section[2]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1200)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.btn-walmart-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.btn-walmart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>SNI Walmart Validator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li</td>
+	<td>1 lb stale bread (loaf)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[13]</td>
+	<td>1/4 cup butter</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>SNI Walmart Validator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>exact:Success: POSTED 16 Ingredients</td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Bread Pudding With Jack Daniels Sauce Recipe - Food.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1200)</td>
+	<td></td>
+</tr>
+<!--QA Note: FDC no checks -->
+<tr>
+	<td>click</td>
+	<td>css=a.grocery-list &gt; span.btn-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://recipes.qa1-food.com/grocery-list?dfpenv=staging&amp;cs_debug=active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,100)</td>
+	<td></td>
+</tr>
+<!--QA Note : Share testing with Walmart var-->
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-share-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-hidden-rr-module.mrb-module-shopping-list-share-print &gt; h1</td>
+	<td>Share &amp; Print</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=mrb-print-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=mrb-share-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td>Done</td>
+</tr>
+<!--QA note, please test Print function menually-->
+<tr>
+	<td>click</td>
+	<td>name=mrb-share-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.to-field &gt; label</td>
+	<td>exact:To:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.email-functionality</td>
+	<td>Ingredients will be listed out in the email you are sending. They are not interactive.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=send-shopping-list-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email-recipient</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=send-shopping-list-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Email sent to joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.btn-walmart-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btn-walmart-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>exact:Success: POSTED 15 Ingredients</td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=silverlight:mpeg4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

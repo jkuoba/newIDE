@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://recipes.food.com/" />
+<title>a1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">a1</td></tr>
+</thead><tbody>
+<!--QA Note: test for SP and Ad slot , print preview and share feature -->
+<!--QA Note: print preview and mail sholuld be manuel review testing. ensure SP logo present -->
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--#ERROR MRB-1445 SP logo  missing and SP text issues -->
+<tr>
+	<td>open</td>
+	<td>http://recipes.qa1-food.com/grocery-list?dfpenv=staging</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=spText</td>
+	<td>Sponsored by</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-share-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.mrb-hidden-rr-module.mrb-module-shopping-list-share-print &gt; h1</td>
+	<td>Share &amp; Print</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=mrb-print-shopping-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-share-shopping-list</td>
+	<td>Share Shopping List</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-print-shopping-list</td>
+	<td>Print Shopping List</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>name=mrb-cancel-sl-share</td>
+	<td>Done</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=mrb-print-shopping-list</td>
+	<td></td>
+</tr>
+<!--QA Note: Plesae manuel test the print preview page-->
+<tr>
+	<td>click</td>
+	<td>id=email-recipient</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email-recipient</td>
+	<td>joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=send-shopping-list-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.message</td>
+	<td>Email sent to joseph@perfectsensedigital.com</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img.img_ad</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mrb-icon.mrb-remove-items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mrb-no-items &gt; span</td>
+	<td>Nothing here yet. Add from your collected recipes or write in above.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
