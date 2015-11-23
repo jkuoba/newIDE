@@ -34,12 +34,12 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=h2</td>
-	<td>Everyday Celebrations</td>
+	<td>Holiday Entertaining</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=section.mrb-sponsored-folder-info</td>
-	<td>Everyday Celebrations These recipes are easy to prepare with Food Network Products available only at Kohl's.</td>
+	<td>Share the joy of food with Walmart.</td>
 </tr>
 <!--SP by and logo -->
 <tr>
@@ -61,7 +61,7 @@
 <tr>
 	<td>assertText</td>
 	<td>id=spText</td>
-	<td>Sponsored by:</td>
+	<td>Sponsored by</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -84,8 +84,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/sponsor/holiday-entertaining</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>mouseOver</td>
-	<td>link=Turkey Swedish Meatballs</td>
+	<td>css=span.mrb-grid-item-image-parent &gt; img</td>
 	<td></td>
 </tr>
 <tr>
