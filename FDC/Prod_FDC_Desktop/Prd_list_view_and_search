@@ -58,13 +58,8 @@
 	<td>Sponsored</td>
 </tr>
 <tr>
-	<td>assertElementNotPresent</td>
-	<td>css=div.mrb-sponsor-collage &gt; img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementNotPresent</td>
-	<td>css=div.mrb-sponsor-collage &gt; img</td>
+	<td>assertElementPresent</td>
+	<td>css=div.mrb-sponsor-card</td>
 	<td></td>
 </tr>
 <tr>
@@ -145,13 +140,18 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[37]/div/a/span</td>
-	<td>Emeril's Spiced Nuts</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[4]/div/a/span[2]</td>
+	<td>Recipe by Paula Deen</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[37]/div/a/span[2]</td>
-	<td>Recipe by Emeril Lagasse</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[7]/div/a/span</td>
+	<td>Simple Perfect Enchiladas</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[7]/div/a/span[2]</td>
+	<td>Recipe by Ree Drummond</td>
 </tr>
 <tr>
 	<td>storeEval</td>

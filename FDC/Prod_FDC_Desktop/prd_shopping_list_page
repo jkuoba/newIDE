@@ -311,6 +311,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
 	<td></td>
@@ -487,6 +492,11 @@
 	<td></td>
 </tr>
 <!--Test scroll down sticky header UI-->
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>

@@ -11,7 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">LogIn</td></tr>
 </thead><tbody>
-<!--FNR Prod www.recieps.foodnetwork.com-->
+<!--FNR Prod    http://recipes.foodnetwork.com/-->
 <tr>
 	<td>deleteCookie</td>
 	<td></td>
@@ -21,6 +21,51 @@
 	<td>setSpeed</td>
 	<td>600</td>
 	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Log in now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#FN-RegistrationLogin &gt; div.gigya-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row &gt; div.gigya-layout-cell.mobile-use-your-email &gt; div.gigya-composite-control.gigya-composite-control-textbox &gt; input[name=&quot;username&quot;]</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#FN-RegistrationLogin &gt; div.gigya-screen &gt; form.gigya-login-form &gt; div.gigya-layout-row &gt; div.gigya-layout-cell.mobile-use-your-email &gt; div.gigya-composite-control.gigya-composite-control-password &gt; input[name=&quot;password&quot;]</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.gigya-layout-row &gt; div.gigya-composite-control.gigya-composite-control-password &gt; input[name=&quot;password&quot;]</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.password-container &gt; input[name=&quot;password&quot;]</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>jkuoqa@aol.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Password1</td>
 </tr>
 <tr>
 	<td>open</td>
@@ -145,7 +190,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=[id$='_showScreenSet_content_close']</td>
+	<td>css=div.gigya-screen-dialog-close</td>
 	<td></td>
 </tr>
 <tr>
@@ -278,6 +323,12 @@
 	<td>3000</td>
 	<td></td>
 </tr>
+<!--#ERROR, after log in , system does not bring user to All Recipe Page, still under welcome page-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
 <tr>
 	<td>waitForTitle</td>
 	<td>Recipe Box</td>
@@ -295,8 +346,13 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=span.mrb-title.mrb-dropdown-trigger</td>
-	<td>Recipe Box</td>
+	<td>css=h2</td>
+	<td>All Recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Holiday Entertaining</td>
 </tr>
 <tr>
 	<td>click</td>

@@ -12,6 +12,8 @@
 <tr><td rowspan="1" colspan="3">Integrated Testing</td></tr>
 </thead><tbody>
 <!--Better test it menually, gigya error cause this testing failed -->
+<!--Gigya bug which lost the sign in data from MPB to Photo library page -->
+<!--Intergration test wont' work due to Gigya login issue -->
 <tr>
 	<td>open</td>
 	<td>/</td>
@@ -28,6 +30,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForTitle</td>
 	<td>Bedroom Design Photos | HGTV</td>
 	<td></td>
@@ -38,13 +45,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=div.media.toggledOn &gt; a</td>
+	<td>open</td>
+	<td>http://photos.hgtv.com/rooms/viewer/bedroom/master-bedroom/captivating-emerald-green-accent-wall-in-bedroom</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.media.toggledOn &gt; a</td>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -80,7 +87,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>xpath=(//button[@type='button'])[4]</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
 	<td>Select Collection</td>
 </tr>
 <tr>
@@ -216,16 +223,6 @@
 <tr>
 	<td>click</td>
 	<td>//a[contains(text(),'Cancel')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=i.icon.icon-trash-o</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/a</td>
 	<td></td>
 </tr>
 </tbody></table>

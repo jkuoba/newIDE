@@ -326,7 +326,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[10]/a/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -544,7 +544,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[6]/a/span</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[10]/a/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -563,46 +563,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Trial Collection')])[2]</td>
+	<td>Trial Collection</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/form/div/div/div/div/div/div/ul/li[4]/a/span</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<!--###7777777777777777777-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div/button</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//button[@type='button']</td>
-	<td>JK QA testing</td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/a</td>
+	<td>clickAndWait</td>
+	<td>link=Trial Collection</td>
 	<td></td>
 </tr>
+<!--###7777777777777777777-->
 <!--verify content form the collection -->
-<tr>
-	<td>click</td>
-	<td>name=saveToCollection</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextPresent</td>
-	<td>Added to JK QA testing</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(text(),'JK QA testing')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=h1.box-title</td>
-	<td>JK QA testing</td>
-</tr>
 <tr>
 	<td>pause</td>
 	<td>2000</td>

@@ -387,16 +387,16 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[2]/div/div/div</td>
-	<td>My Recipes</td>
+	<td>Game Time Eats</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[3]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[4]/div/div/div</td>
 	<td>My Notes</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[3]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[4]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -437,7 +437,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[5]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[6]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -564,7 +564,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[10]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -574,7 +574,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[10]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -619,12 +619,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[10]/div/div/div</td>
 	<td>Mobile update</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[10]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -646,7 +646,7 @@
 <tr>
 	<td>type</td>
 	<td>name=title</td>
-	<td>Mobile</td>
+	<td>QA Testing</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -706,7 +706,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
 	<td>Mobile I</td>
 </tr>
 <!--Note: Create New folder with existing folder name -->
@@ -885,12 +885,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
 	<td>Folder for Recipe Add</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div[2]/div</td>
 	<td>(0)</td>
 </tr>
 <tr>
@@ -902,6 +902,11 @@
 <tr>
 	<td>click</td>
 	<td>css=span.mrb-icon.mrb-folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -946,12 +951,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div[2]/div</td>
 	<td>(1)</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -992,7 +997,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -1023,7 +1028,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[9]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[10]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>

@@ -479,7 +479,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div[2]/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div[2]/div</td>
 	<td>(1)</td>
 </tr>
 <tr>
@@ -489,7 +489,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -606,7 +606,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[7]/div/div/div</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[8]/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
