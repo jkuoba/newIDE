@@ -19,7 +19,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/c717f68/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>css=div.mrb-sponsor-collage &gt; img</td>
 	<td></td>
 </tr>
 <tr>
@@ -69,6 +69,11 @@
 </tr>
 <tr>
 	<td>assertText</td>
+	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/div/button</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>assertText</td>
 	<td>//div[@id='mrb-grid-preview-slider']/div/div/div/div/div/div/div[3]/form/h3</td>
 	<td>My Private Note</td>
 </tr>
@@ -83,8 +88,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <!--//div[starts-with(@id, 'i')]/di    #####-->
@@ -102,7 +117,7 @@
 <!--Note: Note Editing and Cancel testing -->
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -112,17 +127,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>This is toolbar create new </td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//button[@name='cancel_save_note'])[22]</td>
+	<td>xpath=(//button[@name='cancel_save_note'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,7 +148,7 @@
 <!--Note:  update note testing -->
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -143,17 +158,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>This is toolbar create new again</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//button[@name='save_note'])[22]</td>
+	<td>xpath=(//button[@name='save_note'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -169,7 +184,7 @@
 <!--Note: back to original note info-->
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
@@ -179,12 +194,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>xpath=(//textarea[@name='recipeNote'])[22]</td>
+	<td>xpath=(//textarea[@name='recipeNote'])[20]</td>
 	<td>I found the folder</td>
 </tr>
 <!--Note: Check the Chef note -->
@@ -330,7 +345,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.soc-net.twitter</td>
-	<td>41</td>
+	<td>53</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -361,7 +376,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=a.mrb-folder-link</td>
-	<td>Brunch (2)</td>
+	<td>Brunch (21)</td>
 </tr>
 <tr>
 	<td>click</td>

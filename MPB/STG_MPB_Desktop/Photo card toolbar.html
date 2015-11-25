@@ -581,7 +581,7 @@
 	<td>name=note</td>
 	<td>add photo to jkuo QA testing </td>
 </tr>
-<!--ERROR process save process but no response , thus missing confirmation pop up-->
+<!--### ERROR process save process but no response , thus missing confirmation pop up-->
 <tr>
 	<td>click</td>
 	<td>name=saveToCollection</td>
@@ -589,7 +589,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/div[2]</td>
+	<td>//div[starts-with(@id, 'iba')]/div/div/div[2]</td>
 	<td>Added to JK QA testing.</td>
 </tr>
 <tr>
@@ -603,17 +603,6 @@
 	<td></td>
 </tr>
 <!--verify content form the collection -->
-<!--you should be in teh JK QA collection page -->
-<tr>
-	<td>click</td>
-	<td>name=saveToCollection</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextPresent</td>
-	<td>Added to JK QA testing</td>
-	<td></td>
-</tr>
 <tr>
 	<td>pause</td>
 	<td>1000</td>
@@ -710,7 +699,6 @@
 	<td>All My Photos</td>
 	<td></td>
 </tr>
-<!--okoko-->
 </tbody></table>
 </body>
 </html>

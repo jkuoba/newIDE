@@ -63,11 +63,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/087818d/2147483647/thumbnail/91x68%3E/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(1200,900)</td>
 	<td></td>
@@ -100,17 +95,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/c83b167/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>css=div.mrb-sponsor-collage &gt; img</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>xpath=(//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/2b2a49d/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Game-Day-Korean-Style-Chicken-Wing-H_s4x3.jpg.rend.sni18col.landscape.jpeg')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>xpath=(//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/2b2a49d/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Game-Day-Korean-Style-Chicken-Wing-H_s4x3.jpg.rend.sni18col.landscape.jpeg')])[2]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/df55b23/2147483647/thumbnail/196x148/quality/90/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F0%2FRX-KOHLS_MRB-Chocolate-Mini-Loaves-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -146,12 +136,12 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[31]/div/a/span</td>
-	<td>Tomato Pie</td>
+	<td>Beef Stew</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[31]/div/a/span[2]</td>
-	<td>Recipe by Paula Deen</td>
+	<td>Recipe by Food Network Kitchen</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -186,18 +176,13 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/c717f68/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2013%2F11%2F25%2F1%2FRX-KOHLS_MRB-Nest-Cookies-H_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
+	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/9a9230a/2147483647/thumbnail/196x148/quality/90/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
 	<td>The Ultimate Barbecued Chicken</td>
 	<td> </td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//img[contains(@src,'http://box-cdn.qa.scripps.psddev.com/dims4/RECI/f0b0342/2147483647/thumbnail/196x148/quality/75/?url=http%3A%2F%2Ffoodnetwork.sndimg.com%2Fcontent%2Fdam%2Fimages%2Ffood%2Ffullset%2F2011%2F4%2F12%2F0%2FFN_Ultimate-BBQ-Chicken_s4x3.jpg.rend.sni18col.landscape.jpeg')]</td>
-	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
@@ -253,7 +238,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[3]/div/a/span</td>
-	<td>Shredded Chicken Tacos</td>
+	<td>Chicken Mole Torta</td>
 </tr>
 <!--Note: Search List view -->
 <tr>
@@ -269,7 +254,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div/a/span</td>
-	<td>Chicken Cacciatore</td>
+	<td>The Ultimate Barbecued Chicken</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
@@ -284,7 +269,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>Ingredients from Chicken Cacciatore added.</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -294,12 +279,12 @@
 <tr>
 	<td>assertText</td>
 	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>Ingredients from Chicken Piccata added.</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken added.</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=span &gt; b</td>
-	<td>Chicken Cacciatore</td>
+	<td>The Ultimate Barbecued Chicken</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -315,7 +300,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=div.mrb-action-status.mrb-shopping-list-notify-complete &gt; span</td>
-	<td>Ingredients from Chicken Cacciatore removed.</td>
+	<td>Ingredients from The Ultimate Barbecued Chicken removed.</td>
 </tr>
 <tr>
 	<td>pause</td>

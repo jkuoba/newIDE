@@ -150,7 +150,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=[id$='_showScreenSet_content_close']</td>
+	<td>css=div.gigya-screen-dialog-close</td>
 	<td></td>
 </tr>
 <tr>
@@ -309,6 +309,12 @@
 	<td>3000</td>
 	<td></td>
 </tr>
+<!--#ERROR After sign in, system does not bring user to MRB main page -->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
 <tr>
 	<td>assertText</td>
 	<td>css=span.mrb-title.mrb-dropdown-trigger</td>
@@ -375,9 +381,25 @@
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(0,10)</td>
 	<td></td>
 </tr>
+<!--#ERROR  missing login info GIgya issue  thus the drop down not available -->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=li.dropdown.user &gt; a.dropdown-toggle &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
-	<td>css=li.dropdown.user &gt; a.dropdown-toggle &gt; b.caret.sm &gt; i.ss-navigatedown</td>
+	<td>css=li.dropdown.user &gt; a.dropdown-toggle &gt; b.caret.sm</td>
 	<td></td>
 </tr>
 <tr>
@@ -385,6 +407,7 @@
 	<td>link=Log Out</td>
 	<td></td>
 </tr>
+<!--#ERROR Cannot log out from MRB itself -->
 <tr>
 	<td>waitForText</td>
 	<td>css=h2</td>

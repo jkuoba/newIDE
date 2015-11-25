@@ -215,14 +215,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForText</td>
 	<td>css=div.mrb-folder-title-display. &gt; h2</td>
 	<td>All Recipes</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
 </tr>
 <tr>
 	<td>open</td>
