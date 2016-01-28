@@ -387,7 +387,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/div/div[2]/div[2]/div/a[2]/div/div/div</td>
-	<td>Game Time Eats</td>
+	<td>Simple Meal Ideas</td>
 </tr>
 <tr>
 	<td>assertText</td>

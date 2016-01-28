@@ -147,12 +147,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@id='site-wrapper']/div/div[2]/h1</td>
-	<td>Add Your Recipe</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='site-wrapper']/div/div[2]/h1</td>
+	<td>css=h1</td>
 	<td>Add Your Recipe</td>
 </tr>
 <tr>
@@ -395,8 +390,9 @@
 	<td>5000</td>
 	<td></td>
 </tr>
+<!--#Error Missing pop  up message -->
 <tr>
-	<td>waitForText</td>
+	<td>waitForTextNotPresent</td>
 	<td>css=span.message</td>
 	<td>Recipe has been added successfully</td>
 </tr>
@@ -455,6 +451,11 @@
 	<td>type</td>
 	<td>name=url</td>
 	<td>http://www.foodnetwork.com/recipes/tyler-florence/banana-cream-pudding-recipe.html</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
